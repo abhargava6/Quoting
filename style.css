@@ -231,3 +231,26 @@ table tr:last-child td{border-bottom:none;}
 .fb-card li b{color:#1f2937;} .fb-card.star li::before{content:'★';border:none;color:var(--gold);font-size:12px;top:6px;left:0;width:auto;height:auto;}
 
 @media(max-width:640px){.steps,.grid,.exlist{grid-template-columns:1fr;}.msg{max-width:97%;}.overlay{padding:10px;}.pdf-page{padding:24px;}}
+
+/* ── flow / rate-preview ── */
+.tblscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.preview{border:1px solid var(--line);border-radius:11px;overflow:hidden;margin-bottom:12px;}
+.preview .ph{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:9px 13px;background:#fafafa;border-bottom:1px solid var(--line);flex-wrap:wrap;}
+.preview .ph .pt{font-weight:800;font-size:13px;}
+.preview table{font-size:12px;}
+.preview th,.preview td{padding:7px 10px;white-space:nowrap;}
+.rt{font-size:10px;font-weight:700;border-radius:20px;padding:1px 7px;}
+.rt.rack{background:#f1f5f9;color:#475569;border:1px solid #e2e8f0;}
+.rt.evt{background:#ede9fe;color:#7c3aed;border:1px solid #ddd6fe;}
+.rt.comp{background:var(--copper-bg);color:var(--copper-d);border:1px solid #eccfb8;}
+.step-tag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#fff;background:var(--copper);border-radius:5px;padding:2px 8px;margin-right:8px;}
+.stepline{display:flex;align-items:center;gap:8px;margin:26px 0 8px;border-top:1px dashed #e5e1da;padding-top:18px;}
+.stepline h2{margin:0;font-size:16px;}
+
+/* inline gap indicator (chat) + missing-rate prompt */
+.gapflag{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;color:#92400e;background:var(--amber-bg);border:1px solid #fde68a;border-radius:20px;padding:3px 11px;text-decoration:none;}
+.gapflag:hover{filter:brightness(.97);}
+.gapflag.ok{color:#166534;background:var(--green-bg);border-color:#bbf7d0;}
+.prompt{background:#fff;border:1px solid var(--line);border-left:4px solid var(--copper);border-radius:10px;padding:12px 14px;margin:12px 0;}
+.prompt .pq{font-weight:800;font-size:13px;margin-bottom:6px;}
+.prompt p{font-size:12.5px;margin:0;color:#3f3f46;}

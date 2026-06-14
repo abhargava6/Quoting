@@ -20,84 +20,74 @@
 </div>
 
 <div class="wrap">
-  <div class="crumb">Real client request</div>
+  <div class="crumb">Real client request · follows the full flow</div>
   <h1>EIB — Bangkok full-day program</h1>
-  <div class="sub">Via BCD Event Solutions (Belgium) · multi-day full-day usage + transfers · October 2026</div>
+  <div class="sub">Via BCD Event Solutions (Belgium) · multi-day full-day + transfers · October 2026</div>
   <div class="chips"><span class="chip type">Full-day (hourly) + transfers</span><span class="chip intl">International (Thailand)</span><span class="chip">EV preference</span></div>
 
-  <div class="banner">👋 <b>For the team:</b> the real EIB/BCD Bangkok request, as it would flow through the assistant. Gap boxes flag where we want your input. Figures mirror the quote that went out.</div>
+  <div class="banner">👋 <b>For the team:</b> the real EIB/BCD Bangkok request run through the proposed flow. Small <b>⚠ gap</b> chips mark points for your input — details in <a href="#gaps" style="color:#7c2d12;font-weight:700;">Gaps from this request ↓</a>. Figures mirror the quote that went out.</div>
 
   <div class="section-label">The original request</div>
   <div class="request">
     <div class="from">📨 Steven Geysen · BCD Event Solutions (for client EIB)</div>
-    <pre>Client EIB going to Bangkok. Please provide rates for:
-  Oct 10–19 : 1× SUV (or similar – ideally 5–6 passengers; electric if available) · 10 full days
-Hotel: Bangkok Marriott Hotel Sukhumvit. We need:
-  · Airport ↔ hotel transfer rates
-  · Full-day usage from the hotel, starting 7am — until what time is included + hourly rate for extra time (sometimes to 10pm)
-  · Transfers inside the city
-We don't know exact locations except start/end at the hotel.
-All taxes/VAT included; include any garage-to-departure supplement (all-in rates).
-Are drivers English speaking? Cancellation & payment terms?</pre>
+    <pre>Client EIB going to Bangkok, Oct 10–19: 1× SUV (or similar, ideally 5–6 pax; electric if available) · 10 full days.
+Hotel: Bangkok Marriott Sukhumvit. Need: airport↔hotel transfers; full-day usage from 7am (until what time +
+extra-hour rate, sometimes to 10pm); in-city transfers. Exact locations unknown except the hotel.
+All taxes/VAT included; include garage supplement (all-in). English-speaking drivers? Cancellation &amp; payment terms?</pre>
   </div>
 
-  <div class="section-label">How it flows through the assistant</div>
+  <!-- 1-4 -->
+  <div class="stepline"><span class="step-tag">Steps 1–4</span><h2>Intake · Client ID · Resolve dates &amp; locations</h2></div>
   <div class="chat">
-    <div class="msg agent"><div class="avatar agent">You</div><div><div class="who">Sales/CSM</div><div class="bubble">Quote EIB's Bangkok program — full days + airport transfers, October.</div></div></div>
-    <div class="msg assistant"><div class="avatar assistant">S</div><div><div class="who">Assistant</div><div class="bubble">Got it — <b>Bangkok</b>, multi-day. They asked for "SUV or similar, 5–6 passengers"; in our system that maps to an <b>MPV (cap 6)</b>. A few confirmations:
-      <span class="q">Existing BCD account? I'll apply their company discount.</span>
-      <span class="q">Full day "from 7am" — how many hours should I include (I'll show the per-hour rate for time beyond that)?</span>
-      <span class="q">"Electric if available" and "English-speaking drivers" — I'll add these as preferences/notes on the quote.</span></div></div></div>
-    <div class="msg agent"><div class="avatar agent">You</div><div><div class="bubble">BCD M&E account. 12-hour full days. Note EV preference + English drivers.</div></div></div>
+    <div class="msg agent"><div class="avatar agent">You</div><div><div class="who">Sales/CSM</div><div class="bubble">Quote EIB's Bangkok program — full days + airport transfers, Oct 10–19. BCD M&E account.</div></div></div>
     <div class="working ok">✓ BCD M&E account — company discount applies</div>
+    <div class="working">📍 Bangkok market · BKK + Marriott Sukhumvit resolved · in-city locations TBD (priced hourly / as-directed)</div>
+    <div class="msg assistant"><div class="avatar assistant">S</div><div><div class="bubble">"SUV or similar, 5–6 pax" maps to our <b>MPV (cap 6)</b>. Full day "from 7am" — how many hours should I include? I'll note <b>EV preference</b> and <b>English-speaking driver</b> as requests.</div></div></div>
+    <div class="msg agent"><div class="avatar agent">You</div><div><div class="bubble">12-hour full days. Note EV + English drivers.</div></div></div>
+    <a class="gapflag ok" href="#gaps">✓ "SUV or similar 5–6" → MPV · EV/English-driver captured as notes — see summary ↓</a>
   </div>
 
-  <div class="gap handled">
-    <div class="gh">✓ Working — "SUV or similar (5–6 pax)" → MPV <span class="st">Confirm</span></div>
-    <p><span class="lab">What's happening:</span> the client names a vehicle by <b>capacity need</b>, not our exact type. We map "SUV or similar, 5–6 pax" to the <b>MPV (cap 6)</b> — exactly what the team did.</p>
-    <p><span class="lab">Question for the team:</span> is capacity-based mapping the right behavior when a client's vehicle name doesn't match ours?</p>
+  <!-- 5 RATE PREVIEW -->
+  <div class="stepline"><span class="step-tag">Step 5</span><h2>Rate preview — Bangkok (BCD discount)</h2></div>
+  <div class="preview">
+    <div class="ph"><span class="pt">Bangkok — Oct 10–19</span><span class="tiny">BKK ↔ hotel <b>~1.5 h</b> · full day (as-directed) <b>13.5 h</b> quoted time (incl. g2g) · BCD discount</span></div>
+    <div class="tblscroll"><table>
+      <thead><tr><th>Vehicle (cap)</th><th># in mkt</th><th>Hourly</th><th>Transfer (BKK↔hotel)</th><th>Rate type</th><th>Min</th><th>Cancel</th></tr></thead>
+      <tr><td>MPV (6)</td><td>4</td><td>$143.64/hr</td><td>$219.24 flat</td><td><span class="rt comp">Company-profile</span></td><td>4h</td><td>24h</td></tr>
+      <tr><td>Sedan (3)</td><td>6</td><td>$120/hr</td><td>$180 flat</td><td><span class="rt comp">Company-profile</span></td><td>4h</td><td>24h</td></tr>
+      <tr><td>SUV (6)</td><td>3</td><td>$160/hr</td><td>$240 flat</td><td><span class="rt comp">Company-profile</span></td><td>4h</td><td>24h</td></tr>
+    </table></div>
+  </div>
+  <p class="tiny" style="margin:-4px 0 0;">MPV $143.64/hr &amp; $219.24 transfer are real (BCD discount applied); other rows illustrative. Full day "12h" quotes at <b>13.5h incl. garage-to-garage</b>; <b>extra hours = $143.64/hr</b>. <b>“# in mkt”</b> = Bangkok fleet count.</p>
+  <div class="working ok" style="margin:8px auto 0;">✓ Bangkok rates on file — no missing-rate prompt needed here</div>
+  <a class="gapflag" href="#gaps" style="margin-top:8px;">⚠ gap: international coverage + currency/VAT — see summary ↓</a>
+
+  <!-- 7 OPTIONS -->
+  <div class="stepline"><span class="step-tag">Step 7</span><h2>Options (pick / edit)</h2></div>
+  <div class="subopt best"><div class="sh"><b>Option 1 — 1 MPV, full days</b><span class="rt comp">rough ~$1,939 / day</span></div>
+    <div class="vehmix" style="margin-top:6px;"><span class="veh">1 × MPV (cap 6) · 12h as-directed</span><span class="veh">+ airport transfers</span></div>
+    <div class="tiny">Best value for a party of 5–6.</div></div>
+  <div class="subopt"><div class="sh"><b>Option 2 — EV MPV if available</b><span class="rt comp">rough ~$1,939 / day</span></div>
+    <div class="vehmix" style="margin-top:6px;"><span class="veh">1 × MPV (electric) · pending availability</span></div>
+    <div class="tiny">Same rate; confirm EV availability for the dates. <span style="color:var(--amber-d);">Illustrative.</span></div></div>
+  <div class="chat" style="margin-top:8px;">
+    <div class="msg agent"><div class="avatar agent">You</div><div><div class="bubble">Option 1, and request EV where possible. Build the quote.</div></div></div>
+    <div class="working ok">✓ Confirmed — calculating exact, all-in quote</div>
   </div>
 
-  <div class="gap open">
-    <div class="gh">⚠ Gap — international coverage / missing rates <span class="st">Need your input</span></div>
-    <p><span class="lab">What's happening:</span> Bangkok is international; the market/rate may not be on file in Core.</p>
-    <p><span class="lab">Our approach (proceeding):</span> if a rate is missing, the assistant <b>asks you to supply one</b>, uses it for the quote, and <b>warns it must be added in Core afterward, or the quote will be wrong</b> (or surfaces it for the team to add &amp; re-quote).</p>
-    <p><span class="lab">Question for the team:</span> which international markets are reliably rated in Core vs. created ad hoc?</p>
-  </div>
-
-  <div class="gap open">
-    <div class="gh">⚠ Gap — currency &amp; VAT for international <span class="st">Need your input</span></div>
-    <p><span class="lab">What's happening:</span> the client asked for "all taxes/VAT included." We quote in <b>USD</b> today (as the team did), all-in.</p>
-    <p><span class="lab">Question for the team:</span> should international quotes ever show local currency, and how should VAT be represented vs. our standard all-in/federal-tax model?</p>
-  </div>
-
-  <div class="gap handled">
-    <div class="gh">✓ Working — EV / driver language as notes; overtime &amp; garage-to-garage surfaced <span class="st">Confirm</span></div>
-    <p><span class="lab">What's happening:</span> EV preference and "English-speaking drivers" are captured as <b>notes</b> on the quote. The <b>extra-hour rate</b> = the market hourly rate, and the quoted time already includes <b>garage-to-garage</b> (so 12 "as-directed" hours quotes at ~13.5h, as the team's quote showed).</p>
-  </div>
-
-  <div class="section-label">What you'd send the client</div>
+  <!-- 8-9 QUOTE -->
+  <div class="stepline"><span class="step-tag">Steps 8–9</span><h2>Exact quote (with quoted time per leg) → send</h2></div>
   <div class="quote">
-    <div class="quote-top"><div class="brand">SAVOYA<small>Bangkok Program Quote</small></div><div class="meta">Prepared for <b>EIB</b> (via BCD M&amp;E)<br>Oct 10–19, 2026 · Bangkok</div></div>
+    <div class="quote-top"><div class="brand">SAVOYA<small>Bangkok Program Quote</small></div><div class="meta">EIB (via BCD M&amp;E)<br>Oct 10–19, 2026 · Bangkok</div></div>
     <div class="quote-body">
-      <div class="for">All pricing USD, all-in · <b>BCD M&amp;E discount applied</b> · vehicle: <b>MPV (cap 6)</b> · notes: EV preferred, English-speaking driver requested.</div>
-
-      <div class="leg"><div class="lh"><span class="city">Airport ↔ hotel (BKK ⇄ Marriott Sukhumvit)</span><span class="badge xfer">Transfer</span></div>
-        <table><tr><td>One MPV · point-to-point transfer</td><td class="amt">$219.24</td></tr></table></div>
-
-      <div class="leg"><div class="lh"><span class="city">Full day "as directed" (from 7am)</span><span class="badge hourly">Hourly · 12h</span></div>
-        <div class="det">Quoted 13.5 hrs (includes garage-to-garage) · 4-hr minimum · extra time at $143.64/hr</div>
-        <table><tr><td>1 MPV · $143.64/hr × 13.5 hrs</td><td class="amt">$1,939.14 / day</td></tr></table></div>
-
-      <div class="leg"><div class="lh"><span class="city">In-city transfers</span><span class="badge hourly">Hourly</span></div>
-        <div class="det">Billed hourly (locations TBD); trips with stops are billed hourly, garage to garage.</div></div>
-
-      <div class="ratecard"><div class="rc-title">Vehicle rates &amp; policies</div><table>
-        <thead><tr><th>Vehicle</th><th>Use</th><th>Rate</th><th>Minimum</th><th>Cancellation</th></tr></thead>
-        <tr><td>MPV (cap 6)</td><td>Transfer</td><td>$219.24 flat</td><td>—</td><td>24 hrs</td></tr>
-        <tr><td>MPV (cap 6)</td><td>Full day / hourly</td><td>$143.64/hr</td><td>4 hrs</td><td>24 hrs</td></tr>
+      <div class="for">All-in (USD, incl. fuel surcharge &amp; tax) · BCD discount · MPV (cap 6) · notes: EV preferred, English-speaking driver.</div>
+      <div class="tblscroll"><table>
+        <thead><tr><th>Leg / route</th><th>Vehicle</th><th>Quoted time</th><th>Rate type</th><th>Min</th><th class="amt">Price</th></tr></thead>
+        <tr><td>Airport ↔ hotel (BKK ⇄ Marriott)</td><td>MPV</td><td>~1.5 h <span class="tiny">(incl. g2g)</span></td><td><span class="rt comp">Company-profile</span> flat</td><td>—</td><td class="amt">$219.24</td></tr>
+        <tr><td>Full day, as-directed (from 7am)</td><td>MPV</td><td>13.5 h <span class="tiny">(incl. g2g)</span></td><td><span class="rt comp">Company-profile</span></td><td>4h</td><td class="amt">$1,939.14 / day</td></tr>
+        <tr><td>In-city transfers</td><td>MPV</td><td>per trip <span class="tiny">(incl. g2g)</span></td><td><span class="rt comp">Company-profile</span></td><td>4h</td><td class="amt">hourly (TBD)</td></tr>
       </table></div>
-
+      <p class="tiny" style="margin:6px 0 0;">Extra hours beyond the full day at $143.64/hr. Quoted time includes garage-to-garage.</p>
       <div class="terms"><div class="tt">Terms</div><ul>
         <li>Our pricing includes all charges EXCLUDING: variable fees such as parking, airport fees, tolls, and state taxes where applicable. We bill these charges at cost as they are incurred.</li>
         <li>Our drivers are well compensated and additional gratuity is not expected.</li>
@@ -107,17 +97,17 @@ Are drivers English speaking? Cancellation & payment terms?</pre>
         <li>This is a quoting tool and therefore builds quotes. This is not a final price nor is it guaranteed pricing.</li>
       </ul></div>
     </div>
-    <div class="quote-foot">Estimate · all-in (incl. 5% fuel surcharge &amp; tax) · BCD discount applied · full day = 12h (quoted 13.5h incl. garage-to-garage).</div>
+    <div class="quote-foot">Estimate · USD all-in · BCD discount · full day = 12h (quoted 13.5h incl. garage-to-garage).</div>
   </div>
   <div class="out-actions"><span class="a primary" onclick="openOv('pdfOv')">⬇ Branded PDF</span><span class="a" onclick="openOv('prezOv')">Presentation deck</span><span class="a" onclick="openOv('genOv')">Editable spreadsheet</span></div>
 
-  <div class="section-label">Gaps from this request — summary</div>
+  <!-- GAPS -->
+  <div class="section-label" id="gaps">Gaps from this request — summary (for team input)</div>
   <div class="gaps-box">
-    <div class="g-row"><span class="dot">🟡</span><div><div class="g-t">International coverage / missing rates</div><div class="g-d">Bangkok market/rate may not be in Core. <b>Approach:</b> supply-your-own-rate + warning to add in Core.</div><span class="g-ask">Team: which intl markets are rated vs. ad hoc?</span></div></div>
-    <div class="g-row"><span class="dot">🟡</span><div><div class="g-t">Currency &amp; VAT</div><div class="g-d">Quoted USD all-in. <b>Approach:</b> USD by default.</div><span class="g-ask">Team: ever quote local currency? How to show VAT?</span></div></div>
+    <div class="g-row"><span class="dot">🟡</span><div><div class="g-t">International coverage + currency/VAT</div><div class="g-d">Bangkok was on file here, but intl coverage is uneven; client asked "all taxes/VAT included." <b>Approach:</b> quote USD all-in; supply-your-own-rate + Core flag where a market is missing.</div><span class="g-ask">Team: which intl markets are reliably rated? Ever quote local currency / how to show VAT?</span></div></div>
     <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">"SUV or similar 5–6" → MPV</div><div class="g-d">Capacity-based mapping to the right system vehicle type.</div></div></div>
     <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">EV &amp; English-driver requests</div><div class="g-d">Captured as notes/preferences on the quote (not priced).</div></div></div>
-    <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">Overtime &amp; garage-to-garage</div><div class="g-d">Extra hours = hourly rate; quoted time already includes garage-to-garage.</div></div></div>
+    <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">Overtime &amp; garage-to-garage</div><div class="g-d">Extra hours = hourly rate; quoted time includes garage-to-garage.</div></div></div>
     <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">Standing company discount + full-day hours</div><div class="g-d">BCD discount auto-applied; full-day hours confirmed in chat.</div></div></div>
   </div>
 
@@ -127,16 +117,15 @@ Are drivers English speaking? Cancellation & payment terms?</pre>
 <div class="overlay" id="pdfOv"><button class="ov-close" onclick="closeOv('pdfOv')">✕ Close</button>
   <div class="pdf-page">
     <div class="pdf-head"><div><img src="savoya-logo.svg" alt="Savoya"><div class="doc">Bangkok Program Quote</div></div><div class="who"><b>EIB</b> (via BCD M&amp;E)<br>Oct 10–19, 2026 · Bangkok</div></div>
-    <div class="pdf-title">Transportation Quote</div>
-    <span class="pdf-badge">USD · all-in · BCD discount applied · MPV (cap 6) · EV preferred, English driver</span>
+    <div class="pdf-title">Transportation Quote</div><span class="pdf-badge">USD · all-in · BCD discount · MPV (cap 6) · EV preferred, English driver</span>
     <table class="pdf-tbl">
-      <tr><td>Airport ↔ hotel — MPV transfer</td><td class="amt">$219.24</td></tr>
-      <tr><td>Full day (12h, "as directed") — MPV · per day</td><td class="amt">$1,939.14</td></tr>
+      <tr><td>Airport ↔ hotel — MPV transfer (~1.5 h)</td><td class="amt">$219.24</td></tr>
+      <tr><td>Full day (12h, as directed) — MPV · per day (13.5 h)</td><td class="amt">$1,939.14</td></tr>
       <tr><td>In-city transfers — billed hourly (TBD)</td><td class="amt">—</td></tr>
     </table>
     <div class="pdf-terms"><div class="h">Terms</div><ul>
       <li>Pricing includes all charges EXCLUDING variable fees (parking, airport fees, tolls, state taxes) — billed at cost.</li>
-      <li>Drivers well compensated; gratuity not expected. 5% fuel surcharge in effect. Extra hours at $143.64/hr.</li>
+      <li>Drivers well compensated; gratuity not expected. 5% fuel surcharge. Extra hours at $143.64/hr.</li>
       <li>This is a quote, not a final or guaranteed price.</li>
     </ul></div>
     <div class="pdf-foot"><img src="savoya-logo-gold.svg" alt=""><div class="ft">Savoya · concierge@savoya.com · savoya.com</div></div>
@@ -156,10 +145,10 @@ Are drivers English speaking? Cancellation & payment terms?</pre>
 <div class="overlay" id="genOv">
   <div class="sheet-app">
     <div class="sheet-bar"><b>📊 eib-bangkok-quote.xlsx <span class="hint">· cells editable</span></b><button class="sheet-close" onclick="closeOv('genOv')">✕ Close</button></div>
-    <table class="grid-tbl"><thead><tr><th>Service</th><th>Vehicle</th><th>Basis</th><th>Min</th><th>Rate / Total</th></tr></thead><tbody>
-      <tr><td><div class="cell" contenteditable="true">Airport ↔ hotel transfer</div></td><td><div class="cell" contenteditable="true">MPV (cap 6)</div></td><td><div class="cell" contenteditable="true">Flat transfer</div></td><td><div class="cell" contenteditable="true">—</div></td><td><div class="cell" contenteditable="true">$219.24</div></td></tr>
-      <tr><td><div class="cell" contenteditable="true">Full day (12h as directed)</div></td><td><div class="cell" contenteditable="true">MPV (cap 6)</div></td><td><div class="cell" contenteditable="true">Hourly $143.64 (13.5h incl g2g)</div></td><td><div class="cell" contenteditable="true">4 hrs</div></td><td><div class="cell" contenteditable="true">$1,939.14 / day</div></td></tr>
-      <tr><td><div class="cell" contenteditable="true">In-city transfers</div></td><td><div class="cell" contenteditable="true">MPV (cap 6)</div></td><td><div class="cell" contenteditable="true">Hourly (TBD)</div></td><td><div class="cell" contenteditable="true">4 hrs</div></td><td><div class="cell" contenteditable="true">—</div></td></tr>
+    <table class="grid-tbl"><thead><tr><th>Service</th><th>Vehicle</th><th>Quoted time</th><th>Min</th><th>Rate / Total</th></tr></thead><tbody>
+      <tr><td><div class="cell" contenteditable="true">Airport ↔ hotel transfer</div></td><td><div class="cell" contenteditable="true">MPV (cap 6)</div></td><td><div class="cell" contenteditable="true">~1.5 h</div></td><td><div class="cell" contenteditable="true">—</div></td><td><div class="cell" contenteditable="true">$219.24</div></td></tr>
+      <tr><td><div class="cell" contenteditable="true">Full day (12h as directed)</div></td><td><div class="cell" contenteditable="true">MPV (cap 6)</div></td><td><div class="cell" contenteditable="true">13.5 h (incl g2g)</div></td><td><div class="cell" contenteditable="true">4h</div></td><td><div class="cell" contenteditable="true">$1,939.14 / day</div></td></tr>
+      <tr><td><div class="cell" contenteditable="true">In-city transfers</div></td><td><div class="cell" contenteditable="true">MPV (cap 6)</div></td><td><div class="cell" contenteditable="true">per trip</div></td><td><div class="cell" contenteditable="true">4h</div></td><td><div class="cell" contenteditable="true">hourly (TBD)</div></td></tr>
     </tbody></table>
     <div class="sheet-foot">Preview of the editable export — adjust any cell and re-send.</div>
   </div>

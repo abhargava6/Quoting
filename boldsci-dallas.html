@@ -20,71 +20,75 @@
 </div>
 
 <div class="wrap">
-  <div class="crumb">Real client request</div>
+  <div class="crumb">Real client request · follows the full flow</div>
   <h1>BoldScience — Dallas program (manifest)</h1>
   <div class="sub">Airport arrivals &amp; departures · ~80 attendees · March 4–7, 2026 · Crescent Court, Dallas</div>
   <div class="chips"><span class="chip type">Manifest (Path A)</span><span class="chip dom">Dallas (DFW / DAL)</span><span class="chip">Grouping · luggage</span></div>
 
-  <div class="banner">👋 <b>For the team:</b> the real BoldScience manifest, as it would flow through the assistant after the manifest is cleaned in Convey. Gap boxes flag where we want your input. Figures mirror the rates Deni quoted.</div>
+  <div class="banner">👋 <b>For the team:</b> the real BoldScience manifest run through the proposed flow (after Convey cleanup). Small <b>⚠ gap</b> chips mark points for your input — details in <a href="#gaps" style="color:#7c2d12;font-weight:700;">Gaps from this request ↓</a>. Figures mirror the rates Deni quoted.</div>
 
   <div class="section-label">The input (cleaned manifest from Convey)</div>
   <div class="request">
     <div class="from">📎 BoldScience manifest · 2 tabs</div>
     <pre>Tab 1 — Arrivals (~55): pre-grouped by flight (many on the same flights)
-Tab 2 — Departures (~25): sorted by airport/date/time, NOT grouped ("what options do you have —
-        would a mini coach or sprinter work for some of these?")
-A few passengers pending flight info (highlighted); more added over the following weeks.
-Luggage: most travelers have 1 suitcase + 1 personal item.</pre>
+Tab 2 — Departures (~25): sorted by airport/date/time, NOT grouped ("would a mini coach or sprinter work?")
+A few passengers pending flights; luggage: most have 1 suitcase + 1 personal item.</pre>
   </div>
 
-  <div class="section-label">How it flows through the assistant</div>
+  <!-- 1-4 -->
+  <div class="stepline"><span class="step-tag">Steps 1–4</span><h2>Intake · Client ID · Resolve dates &amp; locations</h2></div>
   <div class="chat">
-    <div class="msg agent"><div class="avatar agent">You</div><div><div class="who">Sales/CSM</div><div class="bubble">Cleaned the BoldScience manifest in Convey — here it is. Quote the arrivals &amp; departures.</div></div></div>
-    <div class="msg assistant"><div class="avatar assistant">S</div><div><div class="who">Assistant</div><div class="bubble">Loaded — <b>55 arrivals, 25 departures</b>, Dallas. You've already grouped arrivals by flight; I'll keep your grouping and group the departures by time window. A few setup items:
-      <span class="q">Client ID? Which vehicle types &amp; capacities to use (e.g., SUV 6, Sprinter 13, Mini Coach)?</span>
-      <span class="q">Departures: how tight a window should share a vehicle — e.g., within 30 minutes?</span>
-      <span class="q">A few passengers are pending flights — quote them as placeholders and update later?</span></div></div></div>
-    <div class="msg agent"><div class="avatar agent">You</div><div><div class="bubble">BoldScience account. SUV (6), Sprinter (13), Mini Coach. 30-min window. Yes, placeholders for pending.</div></div></div>
-    <div class="working ok">✓ Kept your arrival grouping · grouping departures by 30-min window · pricing</div>
+    <div class="msg agent"><div class="avatar agent">You</div><div><div class="who">Sales/CSM</div><div class="bubble">Cleaned the BoldScience manifest in Convey — quote the arrivals &amp; departures. BoldScience account.</div></div></div>
+    <div class="working ok">✓ Client account · Dallas market · flight↔airport validation on (catches DAL vs DFW)</div>
+    <div class="working">📍 Kept your arrival grouping (by flight); I'll group departures by a 30-min window</div>
+    <a class="gapflag ok" href="#gaps">✓ system grouping + your pre-grouping · flight validation · pending-pax placeholders — see summary ↓</a>
   </div>
 
-  <div class="gap handled">
-    <div class="gh">✓ Working — reuses the system's grouping + your pre-grouping <span class="st">Confirm</span></div>
-    <p><span class="lab">What's happening:</span> arrivals you already grouped by flight are kept as-is; departures are grouped using the system's logic (same pickup window / location / VIP). It's the same grouping the CSV→reservation flow uses today.</p>
-    <p><span class="lab">Question for the team:</span> right to respect a client's pre-grouping and only group what they left open?</p>
+  <!-- 5 RATE PREVIEW -->
+  <div class="stepline"><span class="step-tag">Step 5</span><h2>Rate preview — Dallas (standard rates, incl. 5% fuel)</h2></div>
+  <div class="preview">
+    <div class="ph"><span class="pt">Dallas — Mar 4–7</span><span class="tiny">DFW/DAL ↔ Crescent Court · <b>~3 h quoted time</b> per group (incl. g2g) · rates incl. 5% fuel surcharge</span></div>
+    <div class="tblscroll"><table>
+      <thead><tr><th>Vehicle (cap)</th><th># in mkt</th><th>Hourly (adj.)</th><th>Transfer</th><th>Rate type</th><th>Min</th><th>Cancel</th></tr></thead>
+      <tr><td>Mini Coach (~30)</td><td>4</td><td>$466.20/hr</td><td>— hourly</td><td><span class="rt rack">Rack</span></td><td>5h</td><td>72h</td></tr>
+      <tr><td>Sprinter (13)</td><td>12</td><td>$324.45/hr</td><td>— hourly</td><td><span class="rt rack">Rack</span></td><td>3h</td><td>24h</td></tr>
+      <tr><td>SUV (6)</td><td>20</td><td>$270.90/hr</td><td>— hourly</td><td><span class="rt rack">Rack</span></td><td>2h</td><td>2h</td></tr>
+    </table></div>
+  </div>
+  <p class="tiny" style="margin:-4px 0 0;">Adjusted rates shown <b>include the 5% fuel surcharge</b> (Mini Coach $466.20, Sprinter $324.45, SUV $270.90 — all real). No profile discount on file → standard rates. <b>“# in mkt”</b> = Dallas fleet count.</p>
+  <div class="working ok" style="margin:8px auto 0;">✓ Dallas rates on file — no missing-rate prompt needed</div>
+
+  <!-- 7 OPTIONS -->
+  <div class="stepline"><span class="step-tag">Step 7</span><h2>Options — grouping strategy (pick / edit)</h2></div>
+  <div class="chat">
+    <div class="msg assistant"><div class="avatar assistant">S</div><div><div class="bubble">Two grouping strategies, plus an optional standby SUV. Open the <b>editable manifest</b> to see who's in which vehicle.</div></div></div>
+    <a class="gapflag" href="#gaps">⚠ gap: luggage → effective capacity (split 11–13 groups, or mini coach?) — see summary ↓</a>
+  </div>
+  <div class="subopt best"><div class="sh"><b>Option A — most economical</b><span class="rt comp">rough ~$14,500</span></div>
+    <div class="vehmix" style="margin-top:6px;"><span class="veh">Sprinters for same-flight groups</span><span class="veh">SUVs for small groups</span><span class="veh">Mini Coach for the largest</span></div></div>
+  <div class="subopt"><div class="sh"><b>Option B — recommended grouping</b><span class="rt comp">rough ~$16,800</span></div>
+    <div class="vehmix" style="margin-top:6px;"><span class="veh">More SUVs · smaller groups</span></div>
+    <div class="tiny">Splits the 11–13 groups across 2 Sprinters instead of a mini coach. <span style="color:var(--amber-d);">Illustrative.</span></div></div>
+  <div class="subopt"><div class="sh"><b>Add: standby SUV (on-site)</b><span class="rt comp">$1,760.85</span></div>
+    <div class="vehmix" style="margin-top:6px;"><span class="veh">SUV held on-site · 6.5 h</span></div></div>
+  <div class="chat" style="margin-top:8px;">
+    <div class="msg agent"><div class="avatar agent">You</div><div><div class="bubble">Option A, plus the standby SUV. Build it.</div></div></div>
+    <div class="working ok">✓ Confirmed — calculating exact, all-in quote</div>
   </div>
 
-  <div class="gap open">
-    <div class="gh">⚠ Gap — luggage drives effective capacity <span class="st">Need your input</span></div>
-    <p><span class="lab">What's happening:</span> you asked "how many fit a Sprinter <b>with luggage</b>?" — groups of 11–13 may need splitting or a Mini Coach. The system stores seats, not luggage.</p>
-    <p><span class="lab">Our approach (proceeding):</span> assume the stated luggage (~1 suitcase + 1 personal/pax), reduce effective capacity, and confirm — then suggest split vs. mini coach.</p>
-    <p><span class="lab">Question for the team:</span> is the assume-and-confirm approach good enough here?</p>
-  </div>
-
-  <div class="gap handled">
-    <div class="gh">✓ Working — standby vehicle, flight validation, pending pax <span class="st">Confirm</span></div>
-    <p><span class="lab">What's happening:</span> a <b>standby SUV</b> is just an hourly vehicle held on-site (priced hourly). <b>Flight validation</b> uses the system (e.g., it flags when a flight number doesn't match the chosen airport — DAL vs DFW). <b>Pending passengers</b> are quoted as placeholders and updated as flights come in.</p>
-  </div>
-
-  <div class="section-label">What you'd send the client</div>
+  <!-- 8-9 QUOTE -->
+  <div class="stepline"><span class="step-tag">Steps 8–9</span><h2>Exact quote (with quoted time) → send</h2></div>
   <div class="quote">
-    <div class="quote-top"><div class="brand">SAVOYA<small>Group Manifest Quote</small></div><div class="meta">Prepared for <b>BoldScience</b><br>~80 transfers · Dallas · Mar 4–7</div></div>
+    <div class="quote-top"><div class="brand">SAVOYA<small>Group Manifest Quote</small></div><div class="meta">BoldScience<br>~80 transfers · Dallas · Mar 4–7</div></div>
     <div class="quote-body">
-      <div class="for">Arrivals grouped by flight · departures grouped within 30-min windows · all-in · <b>open the editable manifest</b> to see every passenger &amp; vehicle.</div>
-      <div class="leg"><div class="lh"><span class="city">Arrivals (~55) — DFW/DAL → Crescent Court</span><span class="badge xfer">Transfer</span></div>
-        <div class="vehmix"><span class="veh"><b>Sprinters</b> for same-flight groups</span><span class="veh"><b>SUVs</b> for small groups</span><span class="veh">+ Mini Coach for the largest</span></div></div>
-      <div class="leg"><div class="lh"><span class="city">Departures (~25) — grouped by 30-min window</span><span class="badge xfer">Transfer</span></div>
-        <div class="det">Split 11–13 groups across 2 Sprinters, or consolidate onto a Mini Coach — see options in the rate card.</div></div>
-      <div class="leg"><div class="lh"><span class="city">Standby SUV (on-site)</span><span class="badge hourly">Hourly</span></div>
-        <table><tr><td>SUV held on-site · 1:30–3:00pm (illustrative window)</td><td class="amt">$1,760.85</td></tr></table></div>
-
-      <div class="ratecard"><div class="rc-title">Vehicle rates &amp; policies (incl. 5% fuel surcharge)</div><table>
-        <thead><tr><th>Vehicle</th><th>Seats</th><th>Adj. rate</th><th>Minimum</th><th>Cancellation</th></tr></thead>
-        <tr><td>Mini Coach</td><td>~30</td><td>$466.20/hr</td><td>5 hrs</td><td>72 hrs</td></tr>
-        <tr><td>Sprinter Van</td><td>13</td><td>$324.45/hr</td><td>3 hrs</td><td>24 hrs</td></tr>
-        <tr><td>SUV (standby)</td><td>6</td><td>$270.90/hr</td><td>2 hrs</td><td>2 hrs</td></tr>
+      <div class="for">Option A · all-in (incl. 5% fuel surcharge &amp; federal tax) · arrivals by flight, departures by 30-min window · <b>open the editable manifest</b> for who's in which vehicle.</div>
+      <div class="tblscroll"><table>
+        <thead><tr><th>Leg</th><th>Vehicles</th><th>Quoted time</th><th>Rate type</th><th class="amt">Price</th></tr></thead>
+        <tr><td>Arrivals (~55) — grouped by flight</td><td>Sprinters + SUVs + Mini Coach</td><td>~3 h / group <span class="tiny">(incl. g2g)</span></td><td><span class="rt rack">Rack</span></td><td class="amt">grouped</td></tr>
+        <tr><td>Departures (~25) — by 30-min window</td><td>Sprinter / Mini Coach</td><td>~3 h / group <span class="tiny">(incl. g2g)</span></td><td><span class="rt rack">Rack</span></td><td class="amt">grouped</td></tr>
+        <tr><td>Standby SUV (on-site)</td><td>1 × SUV</td><td>6.5 h <span class="tiny">(incl. g2g)</span></td><td><span class="rt rack">Rack</span></td><td class="amt">$1,760.85</td></tr>
       </table></div>
-
+      <p class="tiny" style="margin:6px 0 0;">Single itemized invoice at the conclusion of the event. Quoted time includes garage-to-garage.</p>
       <div class="terms"><div class="tt">Terms</div><ul>
         <li>Our pricing includes all charges EXCLUDING: variable fees such as parking, airport fees, tolls, and state taxes where applicable. We bill these charges at cost as they are incurred.</li>
         <li>Our drivers are well compensated and additional gratuity is not expected.</li>
@@ -94,11 +98,12 @@ Luggage: most travelers have 1 suitcase + 1 personal item.</pre>
         <li>This is a quoting tool and therefore builds quotes. This is not a final price nor is it guaranteed pricing.</li>
       </ul></div>
     </div>
-    <div class="quote-foot">Estimate · all-in (incl. 5% fuel surcharge &amp; federal tax) · arrivals grouped by flight, departures by 30-min window · pending passengers shown as placeholders.</div>
+    <div class="quote-foot">Estimate · all-in · standard rates · grouped from the manifest · pending passengers shown as placeholders.</div>
   </div>
-  <div class="out-actions"><span class="a primary" onclick="openOv('pdfOv')">⬇ Branded PDF</span><span class="a" onclick="openOv('prezOv')">Presentation deck</span><span class="a" onclick="openOv('sheetOv')">📊 Editable manifest →</span></div>
+  <div class="out-actions"><span class="a primary" onclick="openOv('sheetOv')">📊 Editable manifest →</span><span class="a" onclick="openOv('pdfOv')">⬇ Branded PDF</span><span class="a" onclick="openOv('prezOv')">Presentation deck</span></div>
 
-  <div class="section-label">Gaps from this request — summary</div>
+  <!-- GAPS -->
+  <div class="section-label" id="gaps">Gaps from this request — summary (for team input)</div>
   <div class="gaps-box">
     <div class="g-row"><span class="dot">🟡</span><div><div class="g-t">Luggage → effective capacity</div><div class="g-d">"How many fit with luggage." <b>Approach:</b> assume stated luggage, reduce capacity, confirm; suggest split vs mini coach.</div><span class="g-ask">Team: assume-and-confirm good enough?</span></div></div>
     <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">System grouping + client pre-grouping</div><div class="g-d">Keeps the client's arrival grouping; groups departures by 30-min window using system logic.</div></div></div>
@@ -112,17 +117,16 @@ Luggage: most travelers have 1 suitcase + 1 personal item.</pre>
 <div class="overlay" id="pdfOv"><button class="ov-close" onclick="closeOv('pdfOv')">✕ Close</button>
   <div class="pdf-page">
     <div class="pdf-head"><div><img src="savoya-logo.svg" alt="Savoya"><div class="doc">Group Manifest Quote</div></div><div class="who"><b>BoldScience</b><br>Dallas · Mar 4–7, 2026</div></div>
-    <div class="pdf-title">Transportation Quote</div>
-    <span class="pdf-badge">All-in (incl. 5% fuel surcharge &amp; federal tax) · grouped from manifest</span>
+    <div class="pdf-title">Transportation Quote</div><span class="pdf-badge">All-in (incl. 5% fuel surcharge &amp; federal tax) · grouped from manifest</span>
     <table class="pdf-tbl">
-      <tr><td>Arrivals (~55) — grouped by flight (Sprinters + SUVs + Mini Coach)</td><td class="amt">grouped</td></tr>
+      <tr><td>Arrivals (~55) — grouped by flight</td><td class="amt">grouped</td></tr>
       <tr><td>Departures (~25) — grouped by 30-min window</td><td class="amt">grouped</td></tr>
-      <tr><td>Standby SUV — on-site, hourly</td><td class="amt">$1,760.85</td></tr>
+      <tr><td>Standby SUV — on-site (6.5 h)</td><td class="amt">$1,760.85</td></tr>
     </table>
     <div class="pdf-terms"><div class="h">Rates &amp; terms</div><ul>
       <li>Mini Coach $466.20/hr (5-hr min) · Sprinter $324.45/hr (3-hr min) · SUV $270.90/hr (2-hr min) — incl. 5% fuel surcharge.</li>
-      <li>Pricing all-in EXCLUDING variable fees (billed at cost). Gratuity not expected.</li>
-      <li>Single itemized invoice at the conclusion of the event. This is a quote, not a final price.</li>
+      <li>Pricing all-in EXCLUDING variable fees (billed at cost). Gratuity not expected. Single itemized invoice at event end.</li>
+      <li>This is a quote, not a final price.</li>
     </ul></div>
     <div class="pdf-foot"><img src="savoya-logo-gold.svg" alt=""><div class="ft">Savoya · concierge@savoya.com · savoya.com</div></div>
   </div>
@@ -151,7 +155,7 @@ Luggage: most travelers have 1 suitcase + 1 personal item.</pre>
     <div class="sheet-pane" id="s-sum" style="max-height:70vh;overflow:auto;">
       <table class="grid-tbl"><thead><tr><th></th><th>Vehicle</th><th>Type</th><th>Passengers</th><th>Leg</th><th>Cost / vehicle</th></tr></thead><tbody id="sumRows"></tbody></table>
     </div>
-    <div class="sheet-foot">Arrivals grouped by flight · departures by 30-min window · pending passengers shown as placeholders. Edit any cell to adjust the grouping.</div>
+    <div class="sheet-foot">Arrivals grouped by flight · departures by 30-min window · pending passengers shown as placeholders. Edit any cell to adjust.</div>
   </div>
 </div>
 

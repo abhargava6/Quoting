@@ -20,12 +20,12 @@
 </div>
 
 <div class="wrap">
-  <div class="crumb">Real client request</div>
+  <div class="crumb">Real client request · follows the full flow</div>
   <h1>Stryker — Irvine event shuttles</h1>
   <div class="sub">Via BCD Travel (RFP form) · hotel ↔ venue shuttles · March 2026</div>
-  <div class="chips"><span class="chip type">Fleet / capacity group quote</span><span class="chip dom">Single market (Irvine, CA)</span><span class="chip">RFP form intake</span></div>
+  <div class="chips"><span class="chip type">Fleet / capacity group quote</span><span class="chip dom">Irvine, CA</span><span class="chip">RFP form intake</span></div>
 
-  <div class="banner">👋 <b>For the team:</b> the real Stryker/BCD RFP, as it would flow through the assistant. Gap boxes flag where we want your input. Figures mirror the quote that went out (with the vehicle mix shown as options).</div>
+  <div class="banner">👋 <b>For the team:</b> the real Stryker/BCD RFP run through the proposed flow. Small <b>⚠ gap</b> chips mark points for your input — details in <a href="#gaps" style="color:#7c2d12;font-weight:700;">Gaps from this request ↓</a>. Figures mirror the quote that went out.</div>
 
   <div class="section-label">The original request (RFP form)</div>
   <div class="request">
@@ -34,64 +34,67 @@
    One-way morning · 80 passengers · "however many vehicles are needed"
    Onsite staff support? "Yes, if possible in the hotel lobby to direct customers to the shuttles"
 TRANSFER 2 — 3/20, 2:15pm · 6001 Oak Canyon → 18000 Von Karman Ave · 25 passengers
-
-Inclusions: is tax and driver gratuity included?
-Cancellation policy: please provide.</pre>
+Inclusions: is tax and driver gratuity included?   Cancellation policy: please provide.</pre>
   </div>
 
-  <div class="section-label">How it flows through the assistant</div>
+  <!-- 1-4 -->
+  <div class="stepline"><span class="step-tag">Steps 1–4</span><h2>Intake · Client ID · Resolve dates &amp; locations</h2></div>
   <div class="chat">
-    <div class="msg agent"><div class="avatar agent">You</div><div><div class="who">Sales/CSM</div><div class="bubble">Quote this Stryker RFP — 80 pax one-way + 25 pax return in Irvine.</div></div></div>
-    <div class="msg assistant"><div class="avatar assistant">S</div><div><div class="who">Assistant</div><div class="bubble">Read the RFP form — two shuttle movements in <b>Irvine</b> on 3/20, both with full addresses. Since it's "however many vehicles needed," I'll size a fleet and show options. Quick checks:
-      <span class="q">Existing client (drop the ID for negotiated rates), or standard rates?</span>
-      <span class="q">They asked for <b>onsite staff in the lobby</b> — want me to add a greeter/coordinator?</span></div></div></div>
-    <div class="msg agent"><div class="avatar agent">You</div><div><div class="bubble">Standard rates for now. Yes, add onsite coordinators.</div></div></div>
-    <div class="working ok">✓ Irvine market · resolved both addresses · checking fleet &amp; rates</div>
+    <div class="msg agent"><div class="avatar agent">You</div><div><div class="who">Sales/CSM</div><div class="bubble">Quote this Stryker RFP — 80 pax one-way + 25 pax return in Irvine, 3/20.</div></div></div>
+    <div class="msg assistant"><div class="avatar assistant">S</div><div><div class="bubble">Read the RFP form — two shuttle movements in <b>Irvine</b> on 3/20.
+      <span class="q">Existing client (client ID for negotiated rates), or standard rates? And should I add onsite coordinators (they asked for lobby staff)?</span></div></div></div>
+    <div class="msg agent"><div class="avatar agent">You</div><div><div class="bubble">Standard rates. Yes, add onsite coordinators.</div></div></div>
+    <div class="working">📍 Resolved both Irvine addresses · same-city movements → priced hourly</div>
+    <div class="working ok">✓ Irvine market · all rates on file · no special event 3/20</div>
+    <a class="gapflag ok" href="#gaps">✓ onsite staff → greeter/coordinator (system vehicle type) — see summary ↓</a>
   </div>
 
-  <div class="gap handled">
-    <div class="gh">✓ Working — RFP form &amp; the client's standard questions <span class="st">Confirm</span></div>
-    <p><span class="lab">What's happening:</span> the assistant reads the structured RFP fields directly, and the quote's <b>terms block</b> answers their "tax &amp; gratuity included? cancellation policy?" questions up front (gratuity not expected; all-in incl. fuel surcharge &amp; federal tax; per-vehicle cancellation shown).</p>
-    <p><span class="lab">Question for the team:</span> does answering those standard questions inline (vs. a back-and-forth) look right?</p>
+  <!-- 5 RATE PREVIEW -->
+  <div class="stepline"><span class="step-tag">Step 5</span><h2>Rate preview — Irvine, 3/20 (standard rates)</h2></div>
+  <div class="preview">
+    <div class="ph"><span class="pt">Irvine — 3/20</span><span class="tiny">Transfer 1 (AM, 80 pax) <b>~6 h</b> · Transfer 2 (PM, 25 pax) <b>~3 h</b> quoted time · standard rates</span></div>
+    <div class="tblscroll"><table>
+      <thead><tr><th>Vehicle (cap)</th><th># in mkt</th><th>Hourly</th><th>Transfer</th><th>Rate type</th><th>Min</th><th>Cancel</th></tr></thead>
+      <tr><td>Sedan (3)</td><td>30</td><td>$98/hr</td><td>— hourly (in-city)</td><td><span class="rt rack">Rack</span></td><td>2h</td><td>2h</td></tr>
+      <tr><td>SUV (6)</td><td>22</td><td>$118/hr</td><td>— hourly (in-city)</td><td><span class="rt rack">Rack</span></td><td>2h</td><td>2h</td></tr>
+      <tr><td>Sprinter (13)</td><td>9</td><td>$259.56/hr</td><td>— hourly (in-city)</td><td><span class="rt rack">Rack</span></td><td>3h</td><td>24h</td></tr>
+      <tr><td>Mini Bus (41)</td><td>4</td><td>$430/hr</td><td>— hourly (in-city)</td><td><span class="rt rack">Rack</span></td><td>6h</td><td>168h</td></tr>
+      <tr><td>Coach Bus (50)</td><td>3</td><td>$539.28/hr</td><td>— hourly (in-city)</td><td><span class="rt rack">Rack</span></td><td>6h</td><td>168h</td></tr>
+      <tr><td>Greeter / Coordinator</td><td>—</td><td>$90/hr</td><td>—</td><td><span class="rt rack">Rack</span></td><td>2h</td><td>2h</td></tr>
+    </table></div>
+  </div>
+  <p class="tiny" style="margin:-4px 0 0;">Coach $539.28/hr &amp; Sprinter $259.56/hr are real; other rows illustrative. Hotel↔venue is in-city, so priced <b>hourly</b> (no flat transfer). Quoted time includes garage-to-garage. No client ID → standard (rack) rates.</p>
+
+  <!-- 7 OPTIONS -->
+  <div class="stepline"><span class="step-tag">Step 7</span><h2>Options — how we'd cover 80 + 25 (pick / edit)</h2></div>
+  <div class="chat">
+    <div class="msg assistant"><div class="avatar assistant">S</div><div><div class="bubble">"However many vehicles are needed" → here are options with rough totals.</div></div></div>
+    <a class="gapflag" href="#gaps">⚠ gap: fleet-sizing default (fewest/largest vs spare capacity) — see summary ↓</a>
+  </div>
+  <div class="subopt best"><div class="sh"><b>Transfer 1 (80) — Option A: 2 Coach Bus</b><span class="rt comp">rough ~$6,470</span></div>
+    <div class="vehmix" style="margin-top:6px;"><span class="veh">2 × Coach Bus (cap 50) · covers 100</span></div></div>
+  <div class="subopt"><div class="sh"><b>Transfer 1 (80) — Option B: 2 Mini Bus</b><span class="rt comp">rough ~$5,180</span></div>
+    <div class="vehmix" style="margin-top:6px;"><span class="veh">2 × Mini Bus (cap 41) · covers 82</span> <span class="tiny">illustrative</span></div></div>
+  <div class="subopt"><div class="sh"><b>Transfer 2 (25) + onsite</b><span class="rt comp">rough ~$2,100</span></div>
+    <div class="vehmix" style="margin-top:6px;"><span class="veh">2 × Sprinter (cap 13)</span><span class="veh">2 × Greeter/Coordinator</span></div></div>
+  <div class="chat" style="margin-top:8px;">
+    <div class="msg agent"><div class="avatar agent">You</div><div><div class="bubble">Coach for Transfer 1, Sprinters for Transfer 2, plus the coordinators.</div></div></div>
+    <div class="working ok">✓ Confirmed — calculating exact, all-in quote</div>
   </div>
 
-  <div class="gap handled">
-    <div class="gh">✓ Working — onsite staff is a real system vehicle type <span class="st">Confirm</span></div>
-    <p><span class="lab">What's happening:</span> "staff in the lobby to direct guests" maps to the system's <b>Hourly Greeter/Coordinator</b> vehicle type, so it's quoted as a normal line item.</p>
-    <p><span class="lab">Question for the team:</span> is greeter/coordinator the right fit for these onsite-staff asks?</p>
-  </div>
-
-  <div class="gap open">
-    <div class="gh">⚠ Gap — fleet sizing default <span class="st">Need your input</span></div>
-    <p><span class="lab">What's happening:</span> "however many vehicles are needed" → we size the fleet from headcount + capacity and show options (fewer large vehicles vs. more smaller ones).</p>
-    <p><span class="lab">Question for the team:</span> for shuttles like this, what's your default — fewest/largest vehicles (cheapest), or a comfort buffer? And how much spare capacity do you like to leave?</p>
-  </div>
-
-  <div class="section-label">What you'd send the client</div>
+  <!-- 8-9 QUOTE -->
+  <div class="stepline"><span class="step-tag">Steps 8–9</span><h2>Exact quote (with quoted time per leg) → send</h2></div>
   <div class="quote">
-    <div class="quote-top"><div class="brand">SAVOYA<small>Event Shuttle Quote</small></div><div class="meta">Prepared for <b>Stryker</b> (via BCD)<br>March 20, 2026 · Irvine, CA</div></div>
+    <div class="quote-top"><div class="brand">SAVOYA<small>Event Shuttle Quote</small></div><div class="meta">Stryker (via BCD)<br>March 20, 2026 · Irvine, CA</div></div>
     <div class="quote-body">
-      <div class="for"><b>Transfer 1</b> — 80 guests · 18000 Von Karman → 6001 Oak Canyon · 7:40am</div>
-      <div class="subopt best"><div class="sh"><b>Option A — 2 Coach Buses</b><span class="veh">Coach Bus · cap 50 ea (covers 100)</span></div>
-        <table><tr><td>2 × Coach Bus · 6-hr minimum</td><td class="amt">$6,471.36</td></tr></table></div>
-      <div class="subopt"><div class="sh"><b>Option B — 2 Mini Buses</b><span class="veh">Mini Bus · cap 41 ea (covers 82)</span></div>
-        <table><tr><td>2 × Mini Bus · 6-hr minimum <span class="tiny">(illustrative)</span></td><td class="amt">$5,180.00</td></tr></table></div>
-
-      <div class="for" style="margin-top:8px;"><b>Transfer 2</b> — 25 guests · return · 2:15pm</div>
-      <div class="subopt"><div class="sh"><b>1 Mini Bus</b> or <b>2 Sprinter Vans</b><span class="veh">Mini Bus 41 · or Sprinter 13 ×2</span></div>
-        <table><tr><td>2 × Sprinter Van · 3-hr minimum</td><td class="amt">$1,557.36</td></tr></table></div>
-
-      <div class="for" style="margin-top:8px;"><b>Onsite support</b></div>
-      <div class="subopt"><div class="sh"><b>Hourly Greeter / Coordinator</b><span class="veh">lobby check-in &amp; shuttle direction</span></div>
-        <table><tr><td>2 × Coordinator · hourly <span class="tiny">(illustrative)</span></td><td class="amt">$540.00</td></tr></table></div>
-
-      <div class="ratecard"><div class="rc-title">Vehicle rates &amp; policies</div><table>
-        <thead><tr><th>Vehicle</th><th>Seats</th><th>Rate basis</th><th>Minimum</th><th>Cancellation</th></tr></thead>
-        <tr><td>Coach Bus</td><td>50</td><td>$539.28/hr</td><td>6 hrs</td><td>168 hrs (7 days)</td></tr>
-        <tr><td>Mini Bus</td><td>41</td><td>hourly</td><td>6 hrs</td><td>168 hrs</td></tr>
-        <tr><td>Sprinter Van</td><td>13</td><td>$259.56/hr</td><td>3 hrs</td><td>24 hrs</td></tr>
+      <div class="for">All-in (incl. 5% fuel surcharge &amp; federal tax) · standard rates · quoted times include garage-to-garage.</div>
+      <div class="tblscroll"><table>
+        <thead><tr><th>Leg / route</th><th>Vehicles</th><th>Quoted time</th><th>Rate type</th><th>Min</th><th class="amt">Price</th></tr></thead>
+        <tr><td>Transfer 1 · Von Karman → Oak Canyon (80)</td><td>2 × Coach Bus</td><td>6.0 h <span class="tiny">(incl. g2g)</span></td><td><span class="rt rack">Rack</span></td><td>6h</td><td class="amt">$6,471.36</td></tr>
+        <tr><td>Transfer 2 · Oak Canyon → Von Karman (25)</td><td>2 × Sprinter</td><td>3.0 h <span class="tiny">(incl. g2g)</span></td><td><span class="rt rack">Rack</span></td><td>3h</td><td class="amt">$1,557.36</td></tr>
+        <tr><td>Onsite support (lobby)</td><td>2 × Greeter/Coordinator</td><td>3.0 h</td><td><span class="rt rack">Rack</span></td><td>2h</td><td class="amt">$540.00</td></tr>
+        <tr class="tot-row"><td colspan="5">Estimated total (all-in)</td><td class="amt">$8,568.72</td></tr>
       </table></div>
-
       <div class="terms"><div class="tt">Terms</div><ul>
         <li>Our pricing includes all charges EXCLUDING: variable fees such as parking, airport fees, tolls, and state taxes where applicable. We bill these charges at cost as they are incurred.</li>
         <li>Our drivers are well compensated and additional gratuity is not expected.</li>
@@ -101,13 +104,14 @@ Cancellation policy: please provide.</pre>
         <li>This is a quoting tool and therefore builds quotes. This is not a final price nor is it guaranteed pricing.</li>
       </ul></div>
     </div>
-    <div class="quote-foot">Estimate · all-in (incl. 5% fuel surcharge &amp; federal tax) · standard market rates · larger vehicles carry a 6-hr minimum.</div>
+    <div class="quote-foot">Estimate · all-in · standard rates · larger vehicles carry a 6-hr minimum.</div>
   </div>
   <div class="out-actions"><span class="a primary" onclick="openOv('pdfOv')">⬇ Branded PDF</span><span class="a" onclick="openOv('prezOv')">Presentation deck</span><span class="a" onclick="openOv('genOv')">Editable spreadsheet</span></div>
 
-  <div class="section-label">Gaps from this request — summary</div>
+  <!-- GAPS -->
+  <div class="section-label" id="gaps">Gaps from this request — summary (for team input)</div>
   <div class="gaps-box">
-    <div class="g-row"><span class="dot">🟡</span><div><div class="g-t">Fleet sizing default</div><div class="g-d">"However many needed" → we size + show options. <b>Approach:</b> fewest/largest by default.</div><span class="g-ask">Team: default to cheapest mix, and how much spare capacity?</span></div></div>
+    <div class="g-row"><span class="dot">🟡</span><div><div class="g-t">Fleet-sizing default</div><div class="g-d">"However many needed" → we size + show options. <b>Approach:</b> fewest/largest by default.</div><span class="g-ask">Team: default to cheapest mix, and how much spare capacity?</span></div></div>
     <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">Onsite staff / greeter</div><div class="g-d">Maps to the system's Hourly Greeter/Coordinator vehicle type → quoted as a line item.</div></div></div>
     <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">RFP-form intake + standard questions</div><div class="g-d">Form parsed directly; tax/gratuity/cancellation answered by the terms block.</div></div></div>
     <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">Capacity vs headcount</div><div class="g-d">Fleet count always covers the passenger count (+ luggage where relevant).</div></div></div>
@@ -119,18 +123,17 @@ Cancellation policy: please provide.</pre>
 <div class="overlay" id="pdfOv"><button class="ov-close" onclick="closeOv('pdfOv')">✕ Close</button>
   <div class="pdf-page">
     <div class="pdf-head"><div><img src="savoya-logo.svg" alt="Savoya"><div class="doc">Event Shuttle Quote</div></div><div class="who"><b>Stryker</b> (via BCD Travel)<br>March 20, 2026 · Irvine, CA</div></div>
-    <div class="pdf-title">Transportation Quote</div>
-    <span class="pdf-badge">All-in (incl. 5% fuel surcharge &amp; federal tax)</span>
+    <div class="pdf-title">Transportation Quote</div><span class="pdf-badge">All-in (incl. 5% fuel surcharge &amp; federal tax)</span>
     <table class="pdf-tbl">
-      <tr><td>Transfer 1 (80 pax) — 2 × Coach Bus · 6-hr min</td><td class="amt">$6,471.36</td></tr>
-      <tr><td>Transfer 2 (25 pax) — 2 × Sprinter Van · 3-hr min</td><td class="amt">$1,557.36</td></tr>
+      <tr><td>Transfer 1 (80) — 2 × Coach Bus · 6.0 h</td><td class="amt">$6,471.36</td></tr>
+      <tr><td>Transfer 2 (25) — 2 × Sprinter · 3.0 h</td><td class="amt">$1,557.36</td></tr>
       <tr><td>Onsite — 2 × Greeter/Coordinator</td><td class="amt">$540.00</td></tr>
       <tr class="tot"><td>Estimated total</td><td class="amt">$8,568.72</td></tr>
     </table>
     <div class="pdf-terms"><div class="h">Terms</div><ul>
       <li>Pricing includes all charges EXCLUDING variable fees (parking, airport fees, tolls, state taxes) — billed at cost.</li>
-      <li>Drivers are well compensated; additional gratuity is not expected. A 5% fuel surcharge is in effect.</li>
-      <li>Cancellation per vehicle (Coach 168 hrs / Sprinter 24 hrs). This is a quote, not a final or guaranteed price.</li>
+      <li>Drivers well compensated; gratuity not expected. 5% fuel surcharge. Cancellation per vehicle (Coach 168 hrs / Sprinter 24 hrs).</li>
+      <li>This is a quote, not a final or guaranteed price.</li>
     </ul></div>
     <div class="pdf-foot"><img src="savoya-logo-gold.svg" alt=""><div class="ft">Savoya · concierge@savoya.com · savoya.com</div></div>
   </div>
@@ -140,18 +143,18 @@ Cancellation policy: please provide.</pre>
   <div class="prez-stage"><div id="prezStage">
     <div class="slide cover show"><div class="pad"><img src="savoya-logo-gold.svg" alt="Savoya"><div class="t">Stryker Irvine<br><span class="gold">Shuttle Proposal</span></div><div class="rule"></div><div class="sub">March 20, 2026 · 80 + 25 guests · Irvine, CA</div></div></div>
     <div class="slide body"><div class="pad"><div class="st">Two movements, fully staffed</div><div class="h">What we'll provide</div>
-      <table><tr><td>Transfer 1 — 2 × Coach Bus (80 guests)</td><td class="amt">$6,471.36</td></tr><tr><td>Transfer 2 — 2 × Sprinter Van (25 guests)</td><td class="amt">$1,557.36</td></tr><tr><td>Onsite greeters / coordinators</td><td class="amt">$540.00</td></tr></table></div></div>
-    <div class="slide close-s"><div class="pad"><img src="savoya-logo-gold.svg" alt="" style="height:26px;margin-bottom:auto;"><div class="big">Estimated investment</div><div class="num">$8,568.72</div><div style="color:#9a917f;font-size:12px;">All-in · 5% fuel surcharge · gratuity not expected</div><div class="nx">Ready to confirm within your 48-hour window.</div></div></div>
+      <table><tr><td>Transfer 1 — 2 × Coach Bus (80)</td><td class="amt">$6,471.36</td></tr><tr><td>Transfer 2 — 2 × Sprinter (25)</td><td class="amt">$1,557.36</td></tr><tr><td>Onsite greeters / coordinators</td><td class="amt">$540.00</td></tr></table></div></div>
+    <div class="slide close-s"><div class="pad"><img src="savoya-logo-gold.svg" alt="" style="height:26px;margin-bottom:auto;"><div class="big">Estimated investment</div><div class="num">$8,568.72</div><div style="color:#9a917f;font-size:12px;">All-in · gratuity not expected</div><div class="nx">Ready to confirm within your 48-hour window.</div></div></div>
   </div><div class="prez-nav"><button onclick="prezGo(-1)">‹</button><div class="prez-dots" id="prezDots"></div><button onclick="prezGo(1)">›</button></div></div>
 </div>
 
 <div class="overlay" id="genOv">
   <div class="sheet-app">
     <div class="sheet-bar"><b>📊 stryker-irvine-quote.xlsx <span class="hint">· cells editable</span></b><button class="sheet-close" onclick="closeOv('genOv')">✕ Close</button></div>
-    <table class="grid-tbl"><thead><tr><th>Movement</th><th>Pax</th><th>Vehicles</th><th>Min</th><th>Total</th></tr></thead><tbody>
-      <tr><td><div class="cell" contenteditable="true">Transfer 1 (7:40am)</div></td><td><div class="cell" contenteditable="true">80</div></td><td><div class="cell" contenteditable="true">2 × Coach Bus</div></td><td><div class="cell" contenteditable="true">6 hrs</div></td><td><div class="cell" contenteditable="true">$6,471.36</div></td></tr>
-      <tr><td><div class="cell" contenteditable="true">Transfer 2 (2:15pm)</div></td><td><div class="cell" contenteditable="true">25</div></td><td><div class="cell" contenteditable="true">2 × Sprinter Van</div></td><td><div class="cell" contenteditable="true">3 hrs</div></td><td><div class="cell" contenteditable="true">$1,557.36</div></td></tr>
-      <tr><td><div class="cell" contenteditable="true">Onsite support</div></td><td><div class="cell" contenteditable="true">—</div></td><td><div class="cell" contenteditable="true">2 × Greeter/Coordinator</div></td><td><div class="cell" contenteditable="true">hourly</div></td><td><div class="cell" contenteditable="true">$540.00</div></td></tr>
+    <table class="grid-tbl"><thead><tr><th>Movement</th><th>Pax</th><th>Vehicles</th><th>Quoted time</th><th>Total</th></tr></thead><tbody>
+      <tr><td><div class="cell" contenteditable="true">Transfer 1 (7:40am)</div></td><td><div class="cell" contenteditable="true">80</div></td><td><div class="cell" contenteditable="true">2 × Coach Bus</div></td><td><div class="cell" contenteditable="true">6.0 h</div></td><td><div class="cell" contenteditable="true">$6,471.36</div></td></tr>
+      <tr><td><div class="cell" contenteditable="true">Transfer 2 (2:15pm)</div></td><td><div class="cell" contenteditable="true">25</div></td><td><div class="cell" contenteditable="true">2 × Sprinter</div></td><td><div class="cell" contenteditable="true">3.0 h</div></td><td><div class="cell" contenteditable="true">$1,557.36</div></td></tr>
+      <tr><td><div class="cell" contenteditable="true">Onsite support</div></td><td><div class="cell" contenteditable="true">—</div></td><td><div class="cell" contenteditable="true">2 × Greeter/Coordinator</div></td><td><div class="cell" contenteditable="true">3.0 h</div></td><td><div class="cell" contenteditable="true">$540.00</div></td></tr>
     </tbody></table>
     <div class="sheet-foot">Preview of the editable export — adjust any cell and re-send.</div>
   </div>
