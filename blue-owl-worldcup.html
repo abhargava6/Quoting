@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Owl — World Cup (MetLife) | Savoya Quoting Walkthrough</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav">
+  <div class="nav-top"><img src="savoya-logo.svg" alt="Savoya"><span class="nm">Quoting Walkthrough</span><a class="home" href="index.html">All examples ↗</a></div>
+  <div class="nav-strip"><div class="row">
+    <span class="lbl">Real requests</span>
+    <a href="ritz-europe.html">Ritz · Europe</a><a href="stryker-irvine.html">Stryker · Irvine</a><a href="eib-bangkok.html">EIB · Bangkok</a><a class="active" href="blue-owl-worldcup.html">Blue Owl · World Cup</a><a href="exxon-whistler.html">Exxon · Whistler</a><a href="boldsci-dallas.html">BoldSci · Dallas</a>
+    <span class="sep"></span>
+    <span class="lbl">Demos</span>
+    <a href="demo-boston.html">Boston</a><a href="demo-hourly.html">Hourly</a><a href="demo-superbowl.html">Super Bowl</a><a href="demo-multicity.html">Multi-city</a><a href="demo-manifest.html">Manifest</a>
+  </div></div>
+</div>
+
+<div class="wrap">
+  <div class="crumb">Real client request</div>
+  <h1>Blue Owl — World Cup shuttles (MetLife)</h1>
+  <div class="sub">Stadium shuttles across 4 match dates · June 2026</div>
+  <div class="chips"><span class="chip type">Trip-by-trip · shuttles</span><span class="chip evt">Special event (World Cup)</span><span class="chip vip">Blue Owl 20% discount</span></div>
+
+  <div class="banner">👋 <b>For the team:</b> the real Blue Owl World Cup request, as it would flow through the assistant. Gap boxes flag where we want your input. Figures mirror the quote that went out.</div>
+
+  <div class="section-label">The original request</div>
+  <div class="request">
+    <div class="from">📨 Taylor Welles · Blue Owl</div>
+    <pre>Looking to book shuttles for a few World Cup games — 4 shuttles per game from different locations
+(Westchester, NYC, NJ, Long Island) to MetLife Stadium.
+Match dates: Jun 13 (6:00pm), Jun 16 (3:00pm), Jun 25 (4:00pm), Jun 27 (5:00pm).
+Important: our 4 parking passes limit vehicles to NO larger than 9ft wide and 18ft long.
+Tickets allow access 3 hours before and 2 hours after; we'd like at least ~1.5 hours early.
+Can you suggest pick-up times? Can we book without exact pick-up locations yet?</pre>
+  </div>
+
+  <div class="section-label">How it flows through the assistant</div>
+  <div class="chat">
+    <div class="msg agent"><div class="avatar agent">You</div><div><div class="who">Sales/CSM</div><div class="bubble">Quote Blue Owl's World Cup shuttles to MetLife — 4 per game, 4 dates.</div></div></div>
+    <div class="msg assistant"><div class="avatar assistant">S</div><div><div class="who">Assistant</div><div class="bubble">Got it — NYC-metro shuttles to <b>MetLife</b>. Two important constraints to honor:
+      <span class="q">Their parking caps vehicle size at <b>9ft × 18ft</b> — sprinters/mini buses exceed that, so I'll use <b>SUVs (cap 6)</b>. OK?</span>
+      <span class="q">No exact pickup locations yet — I'll quote <b>5 hrs of service + 1 hr garage-to-garage</b> and we firm up locations later. And I'll suggest pickup times from the access window.</span></div></div></div>
+    <div class="msg agent"><div class="avatar agent">You</div><div><div class="bubble">Yes, SUVs. Blue Owl account (20% discount). Suggest the times.</div></div></div>
+    <div class="working ok">✓ Blue Owl account — 20% corporate discount applies</div>
+    <div class="working event">⭐ Special event found — FIFA World Cup → special-event SUV rates apply</div>
+  </div>
+
+  <div class="gap open">
+    <div class="gh">⚠ Gap — vehicle dimensions / venue constraints <span class="st">Need your input</span></div>
+    <p><span class="lab">What's happening:</span> the parking passes cap vehicle size (9ft × 18ft), which rules out sprinters/mini buses → <b>SUV only</b>. The system stores <b>seat capacity, not physical dimensions</b>.</p>
+    <p><span class="lab">Our approach (proceeding):</span> when a client states a size/venue limit, the assistant steers the recommendation to a vehicle that fits and <b>flags the constraint as a note</b> (it doesn't change price).</p>
+    <p><span class="lab">Question for the team:</span> good enough to handle dimensions/venue access as a steering rule + note, or do we need real vehicle dimensions in the system?</p>
+  </div>
+
+  <div class="gap open">
+    <div class="gh">⚠ Gap — event-based pickup timing <span class="st">Need your input</span></div>
+    <p><span class="lab">What's happening:</span> there's no flight to anchor on — pickups are driven by the <b>event</b> (kickoff + the ticket access window). Client wants ~1.5h early.</p>
+    <p><span class="lab">Our approach (proceeding):</span> compute suggested pickups from <b>kickoff − desired-lead − drive time</b> per origin, and present them for confirmation.</p>
+    <p><span class="lab">Question for the team:</span> is "suggest pickup times from the event window" useful — and what default lead time do you use for stadium events?</p>
+  </div>
+
+  <div class="gap handled">
+    <div class="gh">✓ Working — quote without exact locations <span class="st">Confirm</span></div>
+    <p><span class="lab">What's happening:</span> with locations TBD, we quote on an <b>hourly assumption</b> (5h service + 1h garage-to-garage), exactly as the team did, and firm up locations before booking. (Quotes don't hold availability.)</p>
+  </div>
+
+  <div class="section-label">What you'd send the client</div>
+  <div class="quote">
+    <div class="quote-top"><div class="brand">SAVOYA<small>Event Shuttle Quote</small></div><div class="meta">Prepared for <b>Blue Owl</b><br>4 match dates · MetLife Stadium</div></div>
+    <div class="quote-body">
+      <div class="for"><b>4 × SUV per game</b> (cap 6) · vehicle size fits the 9ft × 18ft parking limit · <b>Blue Owl 20% discount</b> · all-in.</div>
+      <table>
+        <thead><tr><th style="text-align:left;font-size:10px;text-transform:uppercase;color:var(--muted);padding:6px;">Date</th><th style="text-align:left;font-size:10px;text-transform:uppercase;color:var(--muted);padding:6px;">Kickoff</th><th style="text-align:left;font-size:10px;text-transform:uppercase;color:var(--muted);padding:6px;">Per SUV (5h + 1h g2g)</th><th class="amt" style="font-size:10px;text-transform:uppercase;color:var(--muted);padding:6px;">4 SUVs</th></tr></thead>
+        <tr><td>Sat Jun 13</td><td>6:00pm</td><td>$1,491.84</td><td class="amt">$5,967.36</td></tr>
+        <tr><td>Tue Jun 16</td><td>3:00pm</td><td>$1,491.84</td><td class="amt">$5,967.36</td></tr>
+        <tr><td>Thu Jun 25</td><td>4:00pm</td><td>$1,491.84</td><td class="amt">$5,967.36</td></tr>
+        <tr><td>Sat Jun 27</td><td>5:00pm</td><td>$1,491.84</td><td class="amt">$5,967.36</td></tr>
+        <tr class="tot-row"><td colspan="3">Estimated total (4 games)</td><td class="amt">$23,869.44</td></tr>
+      </table>
+      <div class="ratecard"><div class="rc-title">Vehicle rates &amp; policies</div><table>
+        <thead><tr><th>Vehicle</th><th>Seats</th><th>Rate</th><th>Minimum</th><th>Cancellation</th></tr></thead>
+        <tr><td>SUV (special-event)</td><td>6</td><td>$248.64/hr</td><td>6 hrs</td><td>168 hrs (7 days)</td></tr>
+      </table></div>
+      <div class="terms"><div class="tt">Terms</div><ul>
+        <li>Our pricing includes all charges EXCLUDING: variable fees such as parking, airport fees, tolls, and state taxes where applicable. We bill these charges at cost as they are incurred.</li>
+        <li>Our drivers are well compensated and additional gratuity is not expected.</li>
+        <li>A fuel surcharge of 5% is currently in effect.</li>
+        <li>Transfer rates include up to 30 minutes of complimentary wait time. Additional wait time is billed in 15 minute increments at the market hourly rate. Partial quarter hour increments are rounded to the next quarter hour.</li>
+        <li>Trips with stops are billed hourly. Hourly trips are billed garage to garage.</li>
+        <li>This is a quoting tool and therefore builds quotes. This is not a final price nor is it guaranteed pricing.</li>
+      </ul></div>
+    </div>
+    <div class="quote-foot">Estimate · all-in (incl. 5% fuel surcharge &amp; federal tax) · World Cup special-event rates · Blue Owl 20% discount · suggested pickups from kickoff − lead − drive time.</div>
+  </div>
+  <div class="out-actions"><span class="a primary" onclick="openOv('pdfOv')">⬇ Branded PDF</span><span class="a" onclick="openOv('prezOv')">Presentation deck</span><span class="a" onclick="openOv('genOv')">Editable spreadsheet</span></div>
+
+  <div class="section-label">Gaps from this request — summary</div>
+  <div class="gaps-box">
+    <div class="g-row"><span class="dot">🟡</span><div><div class="g-t">Vehicle dimensions / venue constraints</div><div class="g-d">No dimension data in the system. <b>Approach:</b> steer to a vehicle that fits + note the constraint.</div><span class="g-ask">Team: steering + note good enough, or model dimensions?</span></div></div>
+    <div class="g-row"><span class="dot">🟡</span><div><div class="g-t">Event-based pickup timing</div><div class="g-d">No flight anchor. <b>Approach:</b> suggest pickups from kickoff − lead − drive time.</div><span class="g-ask">Team: default lead time for stadium events?</span></div></div>
+    <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">Special-event pricing (World Cup)</div><div class="g-d">Auto-applied by market + date.</div></div></div>
+    <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">Standing discount (Blue Owl 20%)</div><div class="g-d">Applies automatically by quoting as the client.</div></div></div>
+    <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">Quote without exact locations</div><div class="g-d">Hourly assumption (5h + 1h g2g); firm up locations before booking.</div></div></div>
+  </div>
+
+  <div class="pagernav"><a href="eib-bangkok.html">← EIB · Bangkok</a><a href="exxon-whistler.html">Next: Exxon · Whistler →</a></div>
+</div>
+
+<div class="overlay" id="pdfOv"><button class="ov-close" onclick="closeOv('pdfOv')">✕ Close</button>
+  <div class="pdf-page">
+    <div class="pdf-head"><div><img src="savoya-logo.svg" alt="Savoya"><div class="doc">Event Shuttle Quote</div></div><div class="who"><b>Blue Owl</b><br>World Cup · MetLife Stadium</div></div>
+    <div class="pdf-title">Transportation Quote</div>
+    <span class="pdf-badge">World Cup special-event rates · Blue Owl 20% discount · all-in · SUV (fits parking)</span>
+    <table class="pdf-tbl">
+      <tr><td>Jun 13 — 4 × SUV (5h + 1h g2g)</td><td class="amt">$5,967.36</td></tr>
+      <tr><td>Jun 16 — 4 × SUV</td><td class="amt">$5,967.36</td></tr>
+      <tr><td>Jun 25 — 4 × SUV</td><td class="amt">$5,967.36</td></tr>
+      <tr><td>Jun 27 — 4 × SUV</td><td class="amt">$5,967.36</td></tr>
+      <tr class="tot"><td>Estimated total</td><td class="amt">$23,869.44</td></tr>
+    </table>
+    <div class="pdf-terms"><div class="h">Terms</div><ul>
+      <li>Pricing includes all charges EXCLUDING variable fees (parking, airport fees, tolls, state taxes) — billed at cost.</li>
+      <li>Drivers well compensated; gratuity not expected. 5% fuel surcharge in effect. SUV special-event rate, 6-hr min, 168-hr cancellation.</li>
+      <li>This is a quote, not a final or guaranteed price; quotes do not hold availability.</li>
+    </ul></div>
+    <div class="pdf-foot"><img src="savoya-logo-gold.svg" alt=""><div class="ft">Savoya · concierge@savoya.com · savoya.com</div></div>
+  </div>
+</div>
+
+<div class="overlay" id="prezOv"><button class="ov-close" onclick="closeOv('prezOv')">✕ Close</button>
+  <div class="prez-stage"><div id="prezStage">
+    <div class="slide cover show"><div class="pad"><img src="savoya-logo-gold.svg" alt="Savoya"><div class="t">World Cup<br><span class="gold">Shuttle Proposal</span></div><div class="rule"></div><div class="sub">Blue Owl · MetLife Stadium · 4 match dates</div></div></div>
+    <div class="slide body"><div class="pad"><div class="st">Right-sized for stadium parking</div><div class="h">4 SUVs per game</div>
+      <table><tr><td>Per game — 4 × SUV (5h + 1h g2g)</td><td class="amt">$5,967.36</td></tr><tr><td>Across 4 games</td><td class="amt">$23,869.44</td></tr></table>
+      <p style="margin-top:10px;color:#7c3aed;font-weight:700;font-size:12.5px;">World Cup special-event rates · Blue Owl 20% discount · fits 9×18 parking</p></div></div>
+    <div class="slide close-s"><div class="pad"><img src="savoya-logo-gold.svg" alt="" style="height:26px;margin-bottom:auto;"><div class="big">Estimated investment (4 games)</div><div class="num">$23,869</div><div style="color:#9a917f;font-size:12px;">All-in · availability is closing fast for these dates</div><div class="nx">We'll suggest pickup times and firm up locations on booking.</div></div></div>
+  </div><div class="prez-nav"><button onclick="prezGo(-1)">‹</button><div class="prez-dots" id="prezDots"></div><button onclick="prezGo(1)">›</button></div></div>
+</div>
+
+<div class="overlay" id="genOv">
+  <div class="sheet-app">
+    <div class="sheet-bar"><b>📊 blue-owl-worldcup-quote.xlsx <span class="hint">· cells editable</span></b><button class="sheet-close" onclick="closeOv('genOv')">✕ Close</button></div>
+    <table class="grid-tbl"><thead><tr><th>Date</th><th>Kickoff</th><th>Vehicles</th><th>Per SUV</th><th>Total</th></tr></thead><tbody>
+      <tr><td><div class="cell" contenteditable="true">Jun 13</div></td><td><div class="cell" contenteditable="true">6:00pm</div></td><td><div class="cell" contenteditable="true">4 × SUV</div></td><td><div class="cell" contenteditable="true">$1,491.84</div></td><td><div class="cell" contenteditable="true">$5,967.36</div></td></tr>
+      <tr><td><div class="cell" contenteditable="true">Jun 16</div></td><td><div class="cell" contenteditable="true">3:00pm</div></td><td><div class="cell" contenteditable="true">4 × SUV</div></td><td><div class="cell" contenteditable="true">$1,491.84</div></td><td><div class="cell" contenteditable="true">$5,967.36</div></td></tr>
+      <tr><td><div class="cell" contenteditable="true">Jun 25</div></td><td><div class="cell" contenteditable="true">4:00pm</div></td><td><div class="cell" contenteditable="true">4 × SUV</div></td><td><div class="cell" contenteditable="true">$1,491.84</div></td><td><div class="cell" contenteditable="true">$5,967.36</div></td></tr>
+      <tr><td><div class="cell" contenteditable="true">Jun 27</div></td><td><div class="cell" contenteditable="true">5:00pm</div></td><td><div class="cell" contenteditable="true">4 × SUV</div></td><td><div class="cell" contenteditable="true">$1,491.84</div></td><td><div class="cell" contenteditable="true">$5,967.36</div></td></tr>
+    </tbody></table>
+    <div class="sheet-foot">Preview of the editable export — adjust any cell and re-send.</div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onvia / Ritz — Europe (London · Sicily · Milan) | Savoya Quoting Walkthrough</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav">
+  <div class="nav-top"><img src="savoya-logo.svg" alt="Savoya"><span class="nm">Quoting Walkthrough</span><a class="home" href="index.html">All examples ↗</a></div>
+  <div class="nav-strip"><div class="row">
+    <span class="lbl">Real requests</span>
+    <a class="active" href="ritz-europe.html">Ritz · Europe</a>
+    <a href="stryker-irvine.html">Stryker · Irvine</a>
+    <a href="eib-bangkok.html">EIB · Bangkok</a>
+    <a href="blue-owl-worldcup.html">Blue Owl · World Cup</a>
+    <a href="exxon-whistler.html">Exxon · Whistler</a>
+    <a href="boldsci-dallas.html">BoldSci · Dallas</a>
+    <span class="sep"></span>
+    <span class="lbl">Demos</span>
+    <a href="demo-boston.html">Boston</a><a href="demo-hourly.html">Hourly</a><a href="demo-superbowl.html">Super Bowl</a><a href="demo-multicity.html">Multi-city</a><a href="demo-manifest.html">Manifest</a>
+  </div></div>
+</div>
+
+<div class="wrap">
+  <div class="crumb">Real client request</div>
+  <h1>Onvia family — Europe: London · Sicily · Milan</h1>
+  <div class="sub">Via the Ritz-Carlton Residences concierge · multi-city VIP leisure · July 2026</div>
+  <div class="chips">
+    <span class="chip type">Trip-by-trip + transfers</span><span class="chip intl">International</span><span class="chip vip">VIP · Onvia 20% discount</span><span class="chip evt">F1 special event (Jul 5)</span>
+  </div>
+
+  <div class="banner">👋 <b>For the team:</b> this is the real Onvia/Ritz request you just quoted, rebuilt as it would flow through the chat assistant. Where you see a <b>⚠ gap</b> box, that's something we want your input on — we've shown how we'd handle it today so you can sanity-check the approach while we keep moving. The primary figures match the quote that went out; alternative vehicle configurations shown are illustrative.</div>
+
+  <div class="section-label">The original request (concierge → team)</div>
+  <div class="request">
+    <div class="from">📨 Favian Marquez · Ritz-Carlton Residences (for an Onvia resident-owner family)</div>
+    <pre>A Resident Owner family is traveling to London, Sicily, and Milan this July — itinerary attached.
+Note: the departure times reflect when the Resident would like to ARRIVE at the airport, 2 hours
+prior to the scheduled flight departure. We want the most seamless, elevated options.
+
+London — LGW   Arr Jul 1, 08:40 (BA2166) · 5 people / 5 bags · London Marriott County Hall
+               Dep Jul 5, 14:50 (BA2612)
+Sicily — CTA    Arr Jul 5, 20:55 (BA2612) · 4 people / 4 bags · Mangia's Brucoli, Autograph
+               Dep Jul 9, 10:15 (ZV36BD)
+Milan — LIN     Arr Jul 9, 14:15 (ZV36BD) · 4 people / 4 bags · Starhotels Grand Milan
+               Dep Jul 20, 18:30 (BA7306)</pre>
+  </div>
+
+  <div class="section-label">How it flows through the assistant</div>
+  <div class="chat">
+    <div class="msg agent"><div class="avatar agent">You</div><div><div class="who">Sales/CSM</div><div class="bubble">Quote this Onvia family's Europe trip (London, Sicily, Milan) — itinerary above.</div></div></div>
+    <div class="msg assistant"><div class="avatar assistant">S</div><div><div class="who">Assistant</div><div class="bubble">Got it — a multi-city VIP trip across <b>London, Sicily, Milan</b> in July, one combined quote. A couple of quick confirmations:
+      <span class="q">Is this the existing <b>Onvia</b> account? Drop the client ID and I'll apply their standing discount automatically.</span>
+      <span class="q">The note says departure times = "arrive at airport 2h before flight." I'll set each airport pickup to <b>flight − 2h − drive time</b> — good?</span></div></div></div>
+    <div class="msg agent"><div class="avatar agent">You</div><div><div class="bubble">Yes — Onvia client (ID 5521). 2h-before-flight is correct.</div></div></div>
+    <div class="working ok">✓ Onvia account found — standing 20% discount applies automatically</div>
+  </div>
+
+  <div class="gap open">
+    <div class="gh">⚠ Gap — luggage drives the vehicle <span class="st">Need your input</span></div>
+    <p><span class="lab">What's happening:</span> 5 people fit an SUV by seats (<b>capacity 6</b>), but <b>5 bags won't</b> — so it needs a Sprinter; 4 with bags → an MPV. The system stores <b>seat capacity, not luggage capacity</b>.</p>
+    <p><span class="lab">Our approach (proceeding):</span> assume ~1 bag/pax, reduce a vehicle's effective capacity accordingly, and confirm with you — exactly as we did here (Sprinter for London, MPV for Italy).</p>
+    <p><span class="lab">Question for the team:</span> is "assume ~1 bag/pax, then confirm" good enough, or should we add a real luggage capacity per vehicle type later?</p>
+  </div>
+
+  <div class="chat">
+    <div class="msg assistant"><div class="avatar assistant">S</div><div><div class="bubble">Based on party size + luggage I'd use a <b>Sprinter Van</b> in London (5 pax / 5 bags) and an <b>MPV</b> (Mercedes Viano) in Sicily & Milan. Resolving airports &amp; checking rates…</div></div></div>
+    <div class="working">🔎 Resolving LGW · CTA · LIN · checking market rates for each city</div>
+    <div class="working event">⭐ Special event found — <b>F1 Grand Prix</b> active in London on Jul 5: special rates + limited availability (12-hr min, 7-day cancellation)</div>
+  </div>
+
+  <div class="gap handled">
+    <div class="gh">✓ Working as intended — special-event pricing <span class="st">Confirm</span></div>
+    <p><span class="lab">What's happening:</span> Jul 5 in London falls under the <b>F1 Grand Prix</b> special event. The system applies the special-event rate automatically — including a longer 12-hour minimum and a 7-day cancellation window — and flags limited availability.</p>
+    <p><span class="lab">Question for the team:</span> this matched your real quote — does the special-event handling look right?</p>
+  </div>
+
+  <div class="gap open">
+    <div class="gh">⚠ Gap — international coverage / missing rates <span class="st">Need your input</span></div>
+    <p><span class="lab">What's happening:</span> these are international markets. Rates exist in Core for many, but coverage is <b>incomplete</b> — sometimes a market or specific rate isn't on file and has to be created during quoting.</p>
+    <p><span class="lab">Our approach (proceeding):</span> when a rate is missing, the assistant <b>asks if you want to supply a rate</b>. If you do, it <b>uses your supplied rate for this quote</b> and adds a clear warning that <b>you must add that rate in Core afterward, or the quote will be wrong</b>. (Or it can simply surface what's missing so the team adds it in Core and re-quotes.)</p>
+    <p><span class="lab">Question for the team:</span> which international markets are reliably rated in Core vs. created ad hoc — and is "supply-your-own-rate + warning to add in Core" the right flow?</p>
+  </div>
+
+  <div class="chat">
+    <div class="working flag">⚠ No MPV rate on file for Catania (CTA)</div>
+    <div class="msg assistant"><div class="avatar assistant">S</div><div><div class="bubble">Heads up — I don't have a Core rate for an <b>MPV in Catania</b>. Want to <b>supply one</b> for this quote? I'll use it now and flag that it must be added in Core afterward, or the quote will be wrong.</div></div></div>
+    <div class="msg agent"><div class="avatar agent">You</div><div><div class="bubble">Use $236/hr, 4-hr minimum for the Catania MPV.</div></div></div>
+    <div class="working ok">✓ Using your supplied rate · ⚠ flagged: add MPV · Catania rate in Core to finalize</div>
+  </div>
+
+  <div class="chat">
+    <div class="msg assistant"><div class="avatar assistant">S</div><div><div class="bubble">One nuance worth noting: in <b>Milan</b> the MPV has a <b>flat airport-transfer rate</b>, but in London the Sprinter is <b>hourly only</b> (no flat transfer) — and any trip with extra stops is billed hourly. I've priced each leg the way the system supports it. Here's the combined quote 👇</div></div></div>
+  </div>
+
+  <div class="section-label">What you'd send the client</div>
+  <div class="quote">
+    <div class="quote-top"><div class="brand">SAVOYA<small>Multi-City Transportation Quote</small></div><div class="meta">Prepared for <b>Onvia (Resident Owner family)</b><br>July 2026 · London · Sicily · Milan</div></div>
+    <div class="quote-body">
+      <div class="tiny" style="margin-bottom:10px;">All pricing in USD · <b>Onvia 20% discount applied</b> · drivers recommended by luggage &amp; party size.</div>
+
+      <div class="leg">
+        <div class="lh"><span class="city">London — Jul 1 arrival (LGW) · 5 pax / 5 bags</span><span class="badge hourly">Hourly</span></div>
+        <div class="det">London's catalog includes Sedan, SUV (6), MPV (6), Exec Van (14), Sprinter (13), Premier European Touring, Mini Bus (41), Coach Bus (50) + armored variants. Two configurations that fit 5 guests with luggage:</div>
+        <div class="subopt best">
+          <div class="sh"><b>Option A — one Sprinter Van</b><span class="veh">Sprinter Van · cap 13</span></div>
+          <table style="margin-top:6px;"><tr><td>$393/hr · 5-hour minimum · 72-hr cancellation</td><td class="amt"><span class="strike">$1,965</span></td></tr><tr><td>Discounted 5-hour minimum</td><td class="amt disc">$1,572</td></tr></table>
+        </div>
+        <div class="subopt">
+          <div class="sh"><b>Option B — two Premier European Touring <span class="tiny">(more elevated)</span></b><span class="veh">2 × Premier European Touring · cap 3 ea</span></div>
+          <div class="tiny" style="margin:4px 0;">Two premium vehicles — more private, ample luggage room across both. <span style="color:var(--amber-d);">Illustrative rate.</span></div>
+          <table><tr><td>2 × $295/hr · 5-hour minimum</td><td class="amt"><span class="strike">$2,950</span></td></tr><tr><td>Discounted (Onvia 20%)</td><td class="amt disc">$2,360</td></tr></table>
+        </div>
+      </div>
+
+      <div class="leg evt">
+        <div class="lh"><span class="city">London — Jul 5 departure (LGW)</span><span class="badge spevt">⭐ F1 special event</span></div>
+        <div class="det"><span class="veh">Sprinter Van · special-event rates &amp; availability</span></div>
+        <table><tr><td>$393/hr · <b>12-hour minimum</b> · 7-day cancellation</td><td class="amt"><span class="strike">$4,716</span></td></tr><tr><td>Discounted 12-hour minimum</td><td class="amt disc">$3,772.80</td></tr></table>
+      </div>
+
+      <div class="leg">
+        <div class="lh"><span class="city">Sicily — Catania (CTA), Jul 5 &amp; Jul 9</span><span class="badge hourly">Hourly</span></div>
+        <div class="det"><span class="veh">MPV (Mercedes Viano) · 4 + bags</span></div>
+        <table><tr><td>$236/hr · 4-hour minimum · 24-hr cancellation</td><td class="amt"><span class="strike">$944</span></td></tr><tr><td>Discounted 4-hour minimum, <b>per leg</b></td><td class="amt disc">$755.20</td></tr></table>
+      </div>
+
+      <div class="leg">
+        <div class="lh"><span class="city">Milan — Linate (LIN), Jul 9 &amp; Jul 20</span><span class="badge xfer">Transfer</span></div>
+        <div class="det"><span class="veh">MPV · flat airport transfer</span></div>
+        <table><tr><td>One-way airport transfer</td><td class="amt"><span class="strike">$410</span></td></tr><tr><td>Discounted one-way transfer, <b>per leg</b></td><td class="amt disc">$328</td></tr></table>
+      </div>
+
+      <div class="ratecard"><div class="rc-title">Vehicle rates &amp; policies</div><table>
+        <thead><tr><th>Vehicle</th><th>Use</th><th>Rate</th><th>Minimum</th><th>Cancellation</th></tr></thead>
+        <tr><td>Sprinter Van</td><td>London (hourly)</td><td>$393/hr</td><td>5 hrs (12 on F1 date)</td><td>72 hrs (7 days on F1 date)</td></tr>
+        <tr><td>MPV (Viano)</td><td>Sicily (hourly)</td><td>$236/hr</td><td>4 hrs</td><td>24 hrs</td></tr>
+        <tr><td>MPV (Viano)</td><td>Milan (transfer)</td><td>$410 flat</td><td>—</td><td>per policy</td></tr>
+      </table></div>
+
+      <div class="terms"><div class="tt">Terms</div><ul>
+        <li>Our pricing includes all charges EXCLUDING: variable fees such as parking, airport fees, tolls, and state taxes where applicable. We bill these charges at cost as they are incurred.</li>
+        <li>Our drivers are well compensated and additional gratuity is not expected.</li>
+        <li>A fuel surcharge of 5% is currently in effect.</li>
+        <li>Transfer rates include up to 30 minutes of complimentary wait time. Additional wait time is billed in 15 minute increments at the market hourly rate. Partial quarter hour increments are rounded to the next quarter hour.</li>
+        <li>Trips with stops are billed hourly. Hourly trips are billed garage to garage.</li>
+        <li>This is a quoting tool and therefore builds quotes. This is not a final price nor is it guaranteed pricing.</li>
+      </ul></div>
+    </div>
+    <div class="quote-foot">Estimate · all-in (incl. 5% fuel surcharge &amp; federal tax) · Onvia 20% discount applied · pickups set to arrive 2h before each flight.</div>
+  </div>
+  <div class="out-actions"><span class="a primary" onclick="openOv('pdfOv')">⬇ Branded PDF</span><span class="a" onclick="openOv('prezOv')">Presentation deck</span><span class="a" onclick="openOv('genOv')">Editable spreadsheet</span></div>
+
+  <div class="section-label">Gaps from this request — summary</div>
+  <div class="gaps-box">
+    <div class="g-row"><span class="dot">🟡</span><div><div class="g-t">Luggage drives vehicle choice</div><div class="g-d">No luggage-capacity data in the system. <b>Approach:</b> assume ~1 bag/pax + confirm.</div><span class="g-ask">Team: is that assumption good enough?</span></div></div>
+    <div class="g-row"><span class="dot">🟡</span><div><div class="g-t">International coverage / missing rates</div><div class="g-d">Intl rates exist but coverage is incomplete. <b>Approach:</b> supply-your-own-rate + warning to add in Core (or surface &amp; wait).</div><span class="g-ask">Team: which intl markets are rated vs. ad hoc?</span></div></div>
+    <div class="g-row"><span class="dot">🟡</span><div><div class="g-t">Departure pickup timing</div><div class="g-d">"Arrive 2h before flight" convention. <b>Approach:</b> pickup = flight − 2h − drive time.</div><span class="g-ask">Team: is 2h the right default (and for international)?</span></div></div>
+    <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">Special-event pricing (F1)</div><div class="g-d">Auto-applied by market + date (special rate, 12-hr min, 7-day cxl, limited availability). Matched your quote.</div></div></div>
+    <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">Standing discount (Onvia 20%)</div><div class="g-d">Applies automatically by quoting as the client — not a manual number.</div></div></div>
+    <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">Transfer vs hourly varies by market + vehicle</div><div class="g-d">MPV Milan has a flat transfer; London Sprinter is hourly-only. Priced per what the system supports.</div></div></div>
+    <div class="g-row"><span class="dot">🟢</span><div><div class="g-t">Vehicle options from the real market catalog</div><div class="g-d">London offers Sedan / SUV (6) / MPV (6) / Exec Van (14) / Sprinter (13) / Premier European Touring / Mini Bus (41) / Coach Bus (50) + armored & greeter types — so we can offer alternatives.</div></div></div>
+  </div>
+  <p class="tiny" style="margin-top:8px;">Note: federal tax is included in the all-in total and is handled by us (not a team item) — see requirements §12.</p>
+
+  <div class="pagernav"><a href="index.html">← All examples</a><a href="stryker-irvine.html">Next: Stryker · Irvine →</a></div>
+</div>
+
+<!-- PDF -->
+<div class="overlay" id="pdfOv"><button class="ov-close" onclick="closeOv('pdfOv')">✕ Close</button>
+  <div class="pdf-page">
+    <div class="pdf-head"><div><img src="savoya-logo.svg" alt="Savoya"><div class="doc">Multi-City Transportation Quote</div></div><div class="who"><b>Onvia — Resident Owner family</b><br>July 2026 · London · Sicily · Milan</div></div>
+    <div class="pdf-title">Transportation Quote</div>
+    <span class="pdf-badge">Onvia 20% discount applied · all-in (incl. 5% fuel surcharge &amp; federal tax)</span>
+    <table class="pdf-tbl">
+      <tr><td>London — Jul 1 · Sprinter (5 pax/5 bags) · hourly, 5-hr min</td><td class="amt">$1,572.00</td></tr>
+      <tr><td>London — Jul 5 · Sprinter · ⭐ F1 special event, 12-hr min</td><td class="amt">$3,772.80</td></tr>
+      <tr><td>Sicily (CTA) — MPV · hourly, 4-hr min · per leg</td><td class="amt">$755.20</td></tr>
+      <tr><td>Milan (LIN) — MPV · flat airport transfer · per leg</td><td class="amt">$328.00</td></tr>
+    </table>
+    <div class="pdf-terms"><div class="h">Terms</div><ul>
+      <li>Pricing includes all charges EXCLUDING variable fees (parking, airport fees, tolls, state taxes where applicable) — billed at cost as incurred.</li>
+      <li>Drivers are well compensated; additional gratuity is not expected.</li>
+      <li>A fuel surcharge of 5% is currently in effect.</li>
+      <li>Transfer rates include up to 30 min complimentary wait; additional wait billed in 15-min increments at market hourly rate (partial quarters rounded up).</li>
+      <li>Trips with stops are billed hourly. Hourly trips are billed garage to garage.</li>
+      <li>This is a quoting tool and builds quotes — not a final or guaranteed price.</li>
+    </ul></div>
+    <div class="pdf-foot"><img src="savoya-logo-gold.svg" alt=""><div class="ft">Savoya · concierge@savoya.com · savoya.com</div></div>
+  </div>
+</div>
+
+<!-- Presentation -->
+<div class="overlay" id="prezOv"><button class="ov-close" onclick="closeOv('prezOv')">✕ Close</button>
+  <div class="prez-stage">
+    <div id="prezStage">
+      <div class="slide cover show"><div class="pad"><img src="savoya-logo-gold.svg" alt="Savoya"><div class="t">Europe Transportation<br><span class="gold">Proposal</span></div><div class="rule"></div><div class="sub">Onvia Resident Owner family · London · Sicily · Milan · July 2026</div></div></div>
+      <div class="slide body"><div class="pad"><div class="st">Your itinerary, handled door to door</div><div class="h">What we'll provide</div>
+        <table><tr><td>London — Sprinter Van (5 pax / 5 bags)</td><td class="amt">$1,572</td></tr><tr><td>London — Jul 5 (F1 Grand Prix special event)</td><td class="amt">$3,772.80</td></tr><tr><td>Sicily — MPV (Mercedes Viano), per leg</td><td class="amt">$755.20</td></tr><tr><td>Milan — MPV flat airport transfer, per leg</td><td class="amt">$328</td></tr></table>
+        <p style="margin-top:10px;color:#7c3aed;font-weight:700;font-size:12.5px;">⭐ Includes Onvia's 20% discount · all-in pricing</p></div></div>
+      <div class="slide close-s"><div class="pad"><img src="savoya-logo-gold.svg" alt="" style="height:26px;margin-bottom:auto;"><div class="big">A seamless, elevated journey across three cities</div><div class="num">All-in</div><div style="color:#9a917f;font-size:12px;">Onvia 20% discount applied · incidentals at cost</div><div class="nx">Ready when you are — reply to confirm and we'll secure the chauffeurs.</div></div></div>
+    </div>
+    <div class="prez-nav"><button onclick="prezGo(-1)">‹</button><div class="prez-dots" id="prezDots"></div><button onclick="prezGo(1)">›</button></div>
+  </div>
+</div>
+
+<!-- Spreadsheet -->
+<div class="overlay" id="genOv">
+  <div class="sheet-app">
+    <div class="sheet-bar"><b>📊 onvia-europe-quote.xlsx <span class="hint">· cells editable</span></b><button class="sheet-close" onclick="closeOv('genOv')">✕ Close</button></div>
+    <table class="grid-tbl">
+      <thead><tr><th>City</th><th>Date</th><th>Vehicle</th><th>Type</th><th>Discounted total</th></tr></thead>
+      <tbody>
+        <tr><td><div class="cell" contenteditable="true">London</div></td><td><div class="cell" contenteditable="true">Jul 1</div></td><td><div class="cell" contenteditable="true">Sprinter Van</div></td><td><div class="cell" contenteditable="true">Hourly (5-hr min)</div></td><td><div class="cell" contenteditable="true">$1,572.00</div></td></tr>
+        <tr><td><div class="cell" contenteditable="true">London</div></td><td><div class="cell" contenteditable="true">Jul 5</div></td><td><div class="cell" contenteditable="true">Sprinter Van</div></td><td><div class="cell" contenteditable="true">⭐ F1 special event (12-hr min)</div></td><td><div class="cell" contenteditable="true">$3,772.80</div></td></tr>
+        <tr><td><div class="cell" contenteditable="true">Sicily (CTA)</div></td><td><div class="cell" contenteditable="true">Jul 5 & 9</div></td><td><div class="cell" contenteditable="true">MPV (Viano)</div></td><td><div class="cell" contenteditable="true">Hourly (4-hr min) · per leg</div></td><td><div class="cell" contenteditable="true">$755.20</div></td></tr>
+        <tr><td><div class="cell" contenteditable="true">Milan (LIN)</div></td><td><div class="cell" contenteditable="true">Jul 9 & 20</div></td><td><div class="cell" contenteditable="true">MPV (Viano)</div></td><td><div class="cell" contenteditable="true">Flat transfer · per leg</div></td><td><div class="cell" contenteditable="true">$328.00</div></td></tr>
+      </tbody>
+    </table>
+    <div class="sheet-foot">Preview of the editable export — adjust any cell and re-send.</div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
