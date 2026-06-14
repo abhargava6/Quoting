@@ -104,11 +104,11 @@ Milan — LIN     Arr Jul 9, 14:15 (ZV36BD) · 4 people / 4 bags · Starhotels G
   <div class="stepline"><span class="step-tag">Step 6</span><h2>Missing-rate prompt</h2></div>
   <div class="prompt">
     <div class="pq">⚠ Catania (CTA) transfer rate isn't on file — how would you like to proceed?</div>
-    <p>① <b>Proceed</b> (Catania priced hourly) · ② <b>Configure it in Core</b>, then come back — I'll <b>resume here at the rate preview</b> · ③ <b>Give me a rate now</b> — used for this quote, flagged to <b>add in Core afterward, or the quote will be wrong.</b></p>
+    <p>① <b>Proceed</b> (Catania priced hourly as a fallback) · ② <b>Configure it in Core</b>, then come back — I'll <b>resume here at the rate preview</b> · ③ <b>Give me a flat transfer rate now</b> — used for this quote, flagged to <b>add in Core afterward, or the quote will be wrong.</b></p>
   </div>
   <div class="chat">
-    <div class="msg agent"><div class="avatar agent">You</div><div><div class="bubble">Use $236/hr, 4-hr min for the Catania MPV. We'll add it in Core after.</div></div></div>
-    <div class="working ok">✓ Using your supplied Catania rate · ⚠ flagged: add MPV · Catania in Core to finalize</div>
+    <div class="msg agent"><div class="avatar agent">You</div><div><div class="bubble">Use a flat transfer rate of $755.20 each way for the Catania MPV. We'll add it in Core after.</div></div></div>
+    <div class="working ok">✓ Using your supplied Catania flat transfer rate · ⚠ flagged: add MPV · Catania transfer in Core to finalize</div>
   </div>
 
   <!-- 7 OPTIONS -->
@@ -143,18 +143,18 @@ Milan — LIN     Arr Jul 9, 14:15 (ZV36BD) · 4 people / 4 bags · Starhotels G
         <thead><tr><th>Leg / route</th><th>Vehicle</th><th>Quoted time</th><th>Rate type</th><th>Min</th><th class="amt">Price</th></tr></thead>
         <tr><td>London Jul 1 · LGW → hotel</td><td>Sprinter</td><td>5.0 h <span class="tiny">(incl. g2g)</span></td><td><span class="rt rack">Rack −20%</span></td><td>5h</td><td class="amt">$1,572.00</td></tr>
         <tr><td>London Jul 5 · hotel → LGW</td><td>Sprinter</td><td>12.0 h <span class="tiny">(incl. g2g)</span></td><td><span class="rt evt">⭐ Special-event</span></td><td>12h</td><td class="amt">$3,772.80</td></tr>
-        <tr><td>Sicily · CTA ↔ hotel (×2)</td><td>MPV</td><td>4.0 h ea <span class="tiny">(incl. g2g)</span></td><td><span class="rt rack">Rack −20%</span></td><td>4h</td><td class="amt">$1,510.40</td></tr>
+        <tr><td>Sicily · CTA ↔ hotel (×2)</td><td>MPV</td><td>4.0 h ea <span class="tiny">(incl. g2g)</span></td><td><span class="rt rack">Rack −20%</span> flat <span class="tiny">(supplied)</span></td><td>—</td><td class="amt">$1,510.40</td></tr>
         <tr><td>Milan · LIN ↔ hotel (×2)</td><td>MPV</td><td>~1.25 h ea <span class="tiny">(incl. g2g)</span></td><td><span class="rt rack">Rack −20%</span> flat</td><td>—</td><td class="amt">$656.00</td></tr>
         <tr class="tot-row"><td colspan="5">Estimated total (all-in)</td><td class="amt">$7,511.20</td></tr>
       </table></div>
-      <p class="tiny" style="margin:6px 0 0;">Hourly legs are billed on quoted time (shown vs the minimum); Milan transfers are flat, so quoted time is the estimated duration. ⚠ Catania rate supplied in chat — add it in Core to finalize.</p>
+      <p class="tiny" style="margin:6px 0 0;">Hourly legs are billed on quoted time (shown vs the minimum); Milan &amp; Catania transfers are flat, so quoted time is the estimated duration. ⚠ Catania flat transfer rate ($755.20 each way) was supplied in chat — add it in Core to finalize.</p>
       <div class="ratecard">
         <div class="rc-title">Vehicle rates &amp; policies — vehicles in this quote</div>
         <table>
           <thead><tr><th>Vehicle</th><th>Cap.</th><th>Rate</th><th>Rate type</th><th>Minimum</th><th>Cancellation</th></tr></thead>
           <tr><td>Sprinter · London</td><td>13</td><td>$314/hr</td><td><span class="rt rack">Rack −20%</span></td><td>5 h</td><td>72 h</td></tr>
           <tr><td>Sprinter · London (Jul 5 · F1)</td><td>13</td><td>$314/hr</td><td><span class="rt evt">⭐ Special-event −20%</span></td><td>12 h</td><td>7 days</td></tr>
-          <tr><td>MPV · Sicily (Catania)</td><td>6</td><td>$236/hr</td><td><span class="rt rack">Rack −20%</span></td><td>4 h</td><td>24 h</td></tr>
+          <tr><td>MPV · Sicily (Catania)</td><td>6</td><td>$755.20 flat</td><td><span class="rt rack">Rack −20%</span> <span class="tiny">(supplied)</span></td><td>—</td><td>24 h</td></tr>
           <tr><td>MPV · Milan (Linate)</td><td>6</td><td>$328 flat</td><td><span class="rt rack">Rack −20%</span></td><td>—</td><td>24 h</td></tr>
         </table>
       </div>
@@ -204,7 +204,7 @@ Milan — LIN     Arr Jul 9, 14:15 (ZV36BD) · 4 people / 4 bags · Starhotels G
     <table class="pdf-tbl">
       <tr><td>Sprinter (cap 13) · $314/hr · Rack −20%</td><td class="amt">5 h min · 72 h cxl</td></tr>
       <tr><td>Sprinter (cap 13) · $314/hr · ⭐ Special-event −20% (Jul 5 · F1)</td><td class="amt">12 h min · 7-day cxl</td></tr>
-      <tr><td>MPV (cap 6) · $236/hr · Rack −20% (Sicily)</td><td class="amt">4 h min · 24 h cxl</td></tr>
+      <tr><td>MPV (cap 6) · $755.20 flat · Rack −20% (Sicily · supplied)</td><td class="amt">24 h cxl</td></tr>
       <tr><td>MPV (cap 6) · $328 flat · Rack −20% (Milan)</td><td class="amt">24 h cxl</td></tr>
     </table>
     <div class="pdf-terms"><div class="h">Terms</div><ul>
@@ -225,7 +225,7 @@ Milan — LIN     Arr Jul 9, 14:15 (ZV36BD) · 4 people / 4 bags · Starhotels G
         <table><tr><td>London — Sprinter Van (5 pax / 5 bags)</td><td class="amt">$1,572</td></tr><tr><td>London — Jul 5 (F1 Grand Prix special event)</td><td class="amt">$3,772.80</td></tr><tr><td>Sicily — MPV (Mercedes Viano), per leg</td><td class="amt">$755.20</td></tr><tr><td>Milan — MPV flat airport transfer, per leg</td><td class="amt">$328</td></tr></table>
         <p style="margin-top:10px;color:#7c3aed;font-weight:700;font-size:12.5px;">⭐ Includes Onvia's 20% discount · all-in pricing</p></div></div>
       <div class="slide body"><div class="pad"><div class="st">Transparent, all on one page</div><div class="h">Vehicle rates &amp; policies</div>
-        <table><tr><td>Sprinter (cap 13) · $314/hr · Rack −20%</td><td class="amt">5 h min · 72 h cxl</td></tr><tr><td>Sprinter (cap 13) · $314/hr · ⭐ Special-event (F1)</td><td class="amt">12 h min · 7-day cxl</td></tr><tr><td>MPV (cap 6) · $236/hr · Rack −20% · Sicily</td><td class="amt">4 h min · 24 h cxl</td></tr><tr><td>MPV (cap 6) · $328 flat · Rack −20% · Milan</td><td class="amt">24 h cxl</td></tr></table>
+        <table><tr><td>Sprinter (cap 13) · $314/hr · Rack −20%</td><td class="amt">5 h min · 72 h cxl</td></tr><tr><td>Sprinter (cap 13) · $314/hr · ⭐ Special-event (F1)</td><td class="amt">12 h min · 7-day cxl</td></tr><tr><td>MPV (cap 6) · $755.20 flat · Rack −20% · Sicily</td><td class="amt">24 h cxl</td></tr><tr><td>MPV (cap 6) · $328 flat · Rack −20% · Milan</td><td class="amt">24 h cxl</td></tr></table>
         <p style="margin-top:10px;color:#9a917f;font-size:11.5px;">Only the vehicle types in this quote · rates include Onvia's 20% discount · all-in pricing</p></div></div>
       <div class="slide close-s"><div class="pad"><img src="savoya-logo-gold.svg" alt="" style="height:26px;margin-bottom:auto;"><div class="big">A seamless, elevated journey across three cities</div><div class="num">$7,511</div><div style="color:#9a917f;font-size:12px;">All-in · Onvia 20% discount applied</div><div class="nx">Ready when you are — reply to confirm and we'll secure the chauffeurs.</div></div></div>
     </div>
@@ -242,7 +242,7 @@ Milan — LIN     Arr Jul 9, 14:15 (ZV36BD) · 4 people / 4 bags · Starhotels G
       <tbody>
         <tr><td><div class="cell" contenteditable="true">London Jul 1</div></td><td><div class="cell" contenteditable="true">Sprinter</div></td><td><div class="cell" contenteditable="true">5.0 h (incl g2g)</div></td><td><div class="cell" contenteditable="true">Rack −20%</div></td><td><div class="cell" contenteditable="true">$1,572.00</div></td></tr>
         <tr><td><div class="cell" contenteditable="true">London Jul 5</div></td><td><div class="cell" contenteditable="true">Sprinter</div></td><td><div class="cell" contenteditable="true">12.0 h (incl g2g)</div></td><td><div class="cell" contenteditable="true">⭐ Special-event</div></td><td><div class="cell" contenteditable="true">$3,772.80</div></td></tr>
-        <tr><td><div class="cell" contenteditable="true">Sicily (CTA) ×2</div></td><td><div class="cell" contenteditable="true">MPV</div></td><td><div class="cell" contenteditable="true">4.0 h ea (incl g2g)</div></td><td><div class="cell" contenteditable="true">Rack −20%</div></td><td><div class="cell" contenteditable="true">$1,510.40</div></td></tr>
+        <tr><td><div class="cell" contenteditable="true">Sicily (CTA) ×2</div></td><td><div class="cell" contenteditable="true">MPV</div></td><td><div class="cell" contenteditable="true">4.0 h ea (incl g2g)</div></td><td><div class="cell" contenteditable="true">Rack −20% flat (supplied · $755.20 ea)</div></td><td><div class="cell" contenteditable="true">$1,510.40</div></td></tr>
         <tr><td><div class="cell" contenteditable="true">Milan (LIN) ×2</div></td><td><div class="cell" contenteditable="true">MPV</div></td><td><div class="cell" contenteditable="true">~1.25 h ea (incl g2g)</div></td><td><div class="cell" contenteditable="true">Rack −20% flat</div></td><td><div class="cell" contenteditable="true">$656.00</div></td></tr>
       </tbody>
     </table>
